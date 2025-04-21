@@ -1,5 +1,5 @@
 // Routes
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import routes from "./routes/userRoutes";
 import adminRoutes from "./routes/adminRoutes";
 // CSS
