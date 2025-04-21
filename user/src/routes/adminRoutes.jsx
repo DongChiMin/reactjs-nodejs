@@ -2,7 +2,6 @@ import AdminDashboard from "../pages/admin/AdminDashboard";
 import AdminChefs from "../pages/admin/AdminChefs";
 import AdminMenus from "../pages/admin/AdminMenus";
 import AdminLogin from "../pages/admin/AdminLogin";
-import AdminUsers from "../pages/admin/AdminUsers";
 import AdminLayout from "../layouts/AdminLayout";
 import React from "react";
 import { Navigate } from "react-router-dom";
@@ -42,17 +41,7 @@ const adminRoutes = [
         </AdminLayout>
       </AdminRouteWrapper>
     ),
-  },
-  {
-    path: "/admin/users",
-    element: (
-      <AdminRouteWrapper>
-        <AdminLayout>
-          <AdminUsers />
-        </AdminLayout>
-      </AdminRouteWrapper>
-    ),
-  },
+  }
 ];
 
 function AdminRouteWrapper({ children }) {

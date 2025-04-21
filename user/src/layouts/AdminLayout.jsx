@@ -43,14 +43,6 @@ function AdminLayout({ children }) {
               Manage Chefs
             </Link>
           </li>
-          <li style={{ marginBottom: "10px" }}>
-            <Link
-              to="/admin/users"
-              style={{ color: "#fff", textDecoration: "none" }}
-            >
-              Manage Users
-            </Link>
-          </li>
           <li style={{ marginTop: "20px" }}>
             <button
               onClick={handleLogout}
