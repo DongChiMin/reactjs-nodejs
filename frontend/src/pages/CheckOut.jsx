@@ -107,10 +107,16 @@ function CheckOut() {
   const handleSubmit = async (data) => {
     console.log("Form data:", data);
 
-    const confirm = window.confirm("Bạn có chắc chắn muốn đặt hàng không?");
+    const confirm = window.confirm("Are you sure you want to place the order?");
     if (!confirm) return;
 
     try {
+      const token = localStorage.getItem("token");
+      if (!token) {
+        alert("You must be logged in to place an order.");
+        return;
+      }
+
       const order = {
         ...data,
         items: items
@@ -131,6 +137,9 @@ function CheckOut() {
           {
             amount: totalAmount,
             paymentMethod: "vnpay",
+          },
+          {
+            headers: { Authorization: `Bearer ${token}` },
           }
         );
 
@@ -138,7 +147,12 @@ function CheckOut() {
           window.location.href = response.data.paymentUrl;
         }
       } else {
-        await axios.post("http://localhost:3001/api/orders/add", order);
+        await axios.post("http://localhost:3001/api/orders/add", 
+        order,
+        {
+          headers: { Authorization: `Bearer ${token}` },
+        }
+      );
 
         const cart = JSON.parse(localStorage.getItem("cart")) || {};
         if (cart.items) {

@@ -16,8 +16,12 @@ const addOrder = async (req, res) => {
       totalPrice,
     } = req.body;
 
+    // Lấy userId từ middleware authenticateToken
+    const userId = req.user.id;
+
     // Tạo đối tượng order mới
     const newOrder = new Order({
+      userId, // Gắn userId vào đơn hàng
       customerName,
       phoneNumber,
       emailAddress,
@@ -53,4 +57,15 @@ const getOrders = async (req, res) => {
   }
 };
 
-module.exports = { addOrder, getOrders };
+const getUserOrders = async (req, res) => {
+  try {
+    const userId = req.user.id; // Assuming `req.user` is populated by middleware
+    const orders = await Order.find({ userId }).sort({ createdAt: -1 });
+    res.json(orders);
+  } catch (err) {
+    console.error("Failed to fetch user orders:", err);
+    res.status(500).json({ error: "Server error" });
+  }
+};
+
+module.exports = { addOrder, getOrders, getUserOrders };

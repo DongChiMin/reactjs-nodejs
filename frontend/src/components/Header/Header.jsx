@@ -323,6 +323,11 @@ function Header() {
                         </Link>
                       </li>
                       <li>
+                        <Link className="dropdown-item" to="/order-history">
+                          Order History
+                        </Link>
+                      </li>
+                      <li>
                         <button className="dropdown-item" onClick={handleLogout}>
                           Logout
                         </button>
