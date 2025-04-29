@@ -12,8 +12,9 @@ const userSchema = new mongoose.Schema({
     unique: true,
   },
   phone: {
-    type: String,
+    type: Number,
     required: true,
+    min: 0
   },
   address: {
     type: String, // Add address field

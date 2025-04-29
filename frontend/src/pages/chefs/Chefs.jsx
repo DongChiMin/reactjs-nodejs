@@ -11,6 +11,7 @@ function Chefs() {
   const [chefs, setChefs] = useState([]);
   const [selectedChef, setSelectedChef] = useState(null);
   const [showModal, setShowModal] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     axios
@@ -48,8 +49,30 @@ function Chefs() {
       />
 
       <div className="container py-5">
+      <div className="text-center mb-5">
+          <h6>Our Exquisite Chefs</h6>
+          <h2 style={{ fontSize: "45px", padding: "0px 65px" }}>
+            The Best Of The Best
+          </h2>
+        </div>
+        <div className="mb-4 text-center">
+          <input
+            type="text"
+            className="form-control w-50 mx-auto"
+            placeholder="Search by name or specialty..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+        </div>
+
         <div className="row">
-          {chefs.map((chef) => (
+          {chefs
+          .filter(
+            (chef) =>
+              chef.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+              chef.specialty.toLowerCase().includes(searchTerm.toLowerCase())
+          )
+          .map((chef) => (
             <div className="col-md-3 mb-4" key={chef._id}>
               <div
                 className={`card h-100 ${styles.chefCard}`}

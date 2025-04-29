@@ -4,7 +4,7 @@ function Reservation() {
   return (
     <>
       <div className="section">
-        <h2 className="text-center">Reservation Test </h2>
+        <h2 className="text-center">Reservation Form</h2>
         <div className="row">
           <div className="col-8">
             <ReservationForm />

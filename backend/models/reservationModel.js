@@ -11,12 +11,14 @@ const reservationSchema = new mongoose.Schema({
     required: true,
   },
   phoneNumber: {
-    type: String,
+    type: Number,
     required: true,
+    min: 0
   },
   numberOfGuest: {
     type: Number,
     required: true,
+    min: 0
   },
   seatingArea: {
     type: String,

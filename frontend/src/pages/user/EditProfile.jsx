@@ -8,8 +8,8 @@ function EditProfile() {
     phone: "",
     address: "",
   });
-  const [avatar, setAvatar] = useState(null); // State for avatar file
-  const [previewAvatar, setPreviewAvatar] = useState(""); // State for avatar preview
+  const [avatar, setAvatar] = useState(null);
+  const [previewAvatar, setPreviewAvatar] = useState("");
 
   useEffect(() => {
     const fetchUserInfo = async () => {
@@ -43,7 +43,7 @@ function EditProfile() {
   const handleAvatarChange = (e) => {
     const file = e.target.files[0];
     setAvatar(file);
-    setPreviewAvatar(URL.createObjectURL(file)); // Show a preview of the uploaded avatar
+    setPreviewAvatar(URL.createObjectURL(file));
   };
 
   const handleSubmit = async (e) => {
@@ -51,7 +51,6 @@ function EditProfile() {
     try {
       const token = localStorage.getItem("token");
 
-      // Update profile information
       await axios.put(
         "http://localhost:3001/api/auth/user/update",
         formData,
@@ -60,7 +59,6 @@ function EditProfile() {
         }
       );
 
-      // Update avatar if a new file is selected
       if (avatar) {
         const formData = new FormData();
         formData.append("avatar", avatar);
@@ -74,7 +72,7 @@ function EditProfile() {
       }
 
       alert("Profile updated successfully!");
-      window.location.reload(); // Reload the page to reflect changes
+      window.location.reload();
     } catch (err) {
       console.error(err);
       alert("Failed to update profile. Please try again.");
@@ -83,73 +81,81 @@ function EditProfile() {
 
   return (
     <div className="container mt-5">
-      <h2>Edit Profile</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="text-center mb-4">
+      <h2 className="text-center mb-4">Edit Profile</h2>
+      
+      <div className="d-flex flex-wrap justify-content-center align-items-start">
+        {/* Avatar bên trái */}
+        <div className="text-center mb-4" style={{ minWidth: "250px" }}>
           <img
             src={previewAvatar}
             alt="Avatar Preview"
             className="rounded-circle"
-            style={{ width: "150px", height: "150px", objectFit: "cover" }}
+            style={{ width: "200px", height: "200px", objectFit: "cover" }}
           />
+          <div className="mt-3">
+            <label className="form-label">Change Avatar</label>
+            <input
+              type="file"
+              name="avatar"
+              accept="image/*"
+              onChange={handleAvatarChange}
+              className="form-control"
+            />
+          </div>
         </div>
-        <div className="mb-3">
-          <label>Change Avatar</label>
-          <input
-            type="file"
-            name="avatar"
-            accept="image/*"
-            onChange={handleAvatarChange}
-            className="form-control"
-          />
-        </div>
-        <div className="mb-3">
-          <label>Full Name</label>
-          <input
-            type="text"
-            name="username"
-            value={formData.username}
-            onChange={handleChange}
-            className="form-control"
-            required
-          />
-        </div>
-        <div className="mb-3">
-          <label>Email Address</label>
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="form-control"
-            required
-          />
-        </div>
-        <div className="mb-3">
-          <label>Phone Number</label>
-          <input
-            type="text"
-            name="phone"
-            value={formData.phone}
-            onChange={handleChange}
-            className="form-control"
-            required
-          />
-        </div>
-        <div className="mb-3">
-          <label>Address</label>
-          <input
-            type="text"
-            name="address"
-            value={formData.address}
-            onChange={handleChange}
-            className="form-control"
-          />
-        </div>
-        <button type="submit" className="btn btn-primary">
-          Save Changes
-        </button>
-      </form>
+
+        {/* Form bên phải */}
+        <form onSubmit={handleSubmit} className="flex-grow-1 ps-4" style={{ maxWidth: "600px" }}>
+          <div className="mb-3">
+            <label className="form-label">Full Name</label>
+            <input
+              type="text"
+              name="username"
+              value={formData.username}
+              onChange={handleChange}
+              className="form-control"
+              required
+            />
+          </div>
+          <div className="mb-3">
+            <label className="form-label">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="form-control"
+              required
+            />
+          </div>
+          <div className="mb-3">
+            <label className="form-label">Phone Number</label>
+            <input
+              type="text"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              className="form-control"
+              required
+            />
+          </div>
+          <div className="mb-3">
+            <label className="form-label">Address</label>
+            <input
+              type="text"
+              name="address"
+              value={formData.address}
+              onChange={handleChange}
+              className="form-control"
+            />
+          </div>
+          <div className="text-center">
+            <button type="submit" className="">
+              Save Changes
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }
