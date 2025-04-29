@@ -305,6 +305,7 @@ function Header() {
                 {isLoggedIn ? (
                   <div
                     className="dropdown"
+                    style={{ position: "relative" }}
                     onMouseEnter={(e) => {
                       const button = e.currentTarget.querySelector("button");
                       const menu =
@@ -350,6 +351,11 @@ function Header() {
                       <li>
                         <Link className="dropdown-item" to="/edit-profile">
                           Edit Profile
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item" to="/order-history">
+                          Order History
                         </Link>
                       </li>
                       <li>

@@ -66,14 +66,16 @@ const ReservationTable = ({ isInModal = false }) => {
       }
 
       setFormData({
+        createdBy: "customer",
         customerName: "",
         emailAddress: "",
         phoneNumber: "",
         numberOfGuest: "",
-        seatingArea: "",
+        seatingArea: "", // Để chọn từ dropdown
+        tableType: "",
         status: "pending",
         note: "",
-        dateTime: "",
+        dateTime: "", // for date
         createdAt: new Date().toISOString(),
       });
 
