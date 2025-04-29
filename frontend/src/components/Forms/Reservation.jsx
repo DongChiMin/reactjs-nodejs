@@ -1,9 +1,54 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import styles from "./Reservation.module.css";
 
 function Reservation() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+  });
+
+  useEffect(() => {
+    const fetchUserInfo = async () => {
+      try {
+        const token = localStorage.getItem("token");
+        if (!token) return;
+
+        const response = await axios.get("http://localhost:3001/api/auth/user/info", {
+          headers: { Authorization: `Bearer ${token}` },
+        });
+
+        const user = response.data;
+        setFormData({
+          name: user.username || "",
+          email: user.email || "",
+          phone: user.phone || "",
+        });
+      } catch (err) {
+        console.error("Failed to fetch user info:", err);
+      }
+    };
+
+    fetchUserInfo();
+  }, []);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Reservation Data:", formData);
+    alert("Reservation submitted successfully!");
+  };
+
   return (
-    <form className={styles.formContainer}>
+    <form className={styles.formContainer} onSubmit={handleSubmit}>
       <div className="row">
         <div className="col-lg-12 text-center">
           <h4>Table Reservation</h4>
@@ -16,6 +61,8 @@ function Reservation() {
               type="text"
               id="name"
               placeholder="Your Name*"
+              value={formData.name}
+              onChange={handleChange}
               required
               className={styles.input}
             />
@@ -30,6 +77,8 @@ function Reservation() {
               id="email"
               pattern="[^ @]*@[^ @]*"
               placeholder="Your Email Address"
+              value={formData.email}
+              onChange={handleChange}
               required
               className={styles.input}
             />
@@ -43,6 +92,8 @@ function Reservation() {
               type="text"
               id="phone"
               placeholder="Phone Number*"
+              value={formData.phone}
+              onChange={handleChange}
               required
               className={styles.input}
             />

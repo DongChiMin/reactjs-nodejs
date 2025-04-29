@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const orderSchema = new mongoose.Schema({
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: "Users", required: true },
   customerName: { type: String, required: true },
   phoneNumber: { type: String, required: true },
   emailAddress: { type: String },
@@ -13,5 +14,4 @@ const orderSchema = new mongoose.Schema({
   date: { type: Date, default: Date.now },
 });
 
-// Export model
 module.exports = mongoose.model("Order", orderSchema);
