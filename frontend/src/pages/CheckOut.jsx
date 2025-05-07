@@ -132,11 +132,13 @@ function CheckOut() {
       };
 
       if (data.paymentMethod === "vnpay") {
+        // Gọi API create_payment_url để lấy URL thanh toán
         const response = await axios.post(
           "http://localhost:3001/api/payment/create_payment_url",
           {
             amount: totalAmount,
-            paymentMethod: "vnpay",
+            bankCode: data.bankCode || "", // Nếu có chọn ngân hàng
+            language: "vn",
           },
           {
             headers: { Authorization: `Bearer ${token}` },
@@ -144,15 +146,14 @@ function CheckOut() {
         );
 
         if (response.data.paymentUrl) {
+          // Chuyển hướng đến VNPay
           window.location.href = response.data.paymentUrl;
         }
       } else {
-        await axios.post("http://localhost:3001/api/orders/add", 
-        order,
-        {
+        // Xử lý các phương thức thanh toán khác
+        await axios.post("http://localhost:3001/api/orders/add", order, {
           headers: { Authorization: `Bearer ${token}` },
-        }
-      );
+        });
 
         const cart = JSON.parse(localStorage.getItem("cart")) || {};
         if (cart.items) {
