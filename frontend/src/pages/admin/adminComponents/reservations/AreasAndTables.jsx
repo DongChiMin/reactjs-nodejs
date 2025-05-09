@@ -354,7 +354,12 @@ function AreasAndTables({ tables, reservations, onTableUpdated }) {
               style={{ width: "600px" }}
             >
               {areas.map((area, index) => (
-                <Tab key={area} label={area} value={(index + 1).toString()} />
+                <Tab
+                  key={area}
+                  label={area}
+                  value={(index + 1).toString()}
+                  style={{ fontWeight: "bold" }}
+                />
               ))}
             </Tabs>
 
@@ -386,14 +391,16 @@ function AreasAndTables({ tables, reservations, onTableUpdated }) {
                 >
                   Red background
                 </span>{" "}
-                bookings scheduled <strong>today</strong>.
+                bookings scheduled{" "}
+                <strong style={{ fontWeight: "bold" }}>today</strong>.
                 <br />
                 <span
                   style={{ backgroundColor: "#DDFFDD", padding: "2px 6px" }}
                 >
                   Green background
                 </span>{" "}
-                bookings scheduled <strong>future</strong>.
+                bookings scheduled{" "}
+                <strong style={{ fontWeight: "bold" }}>future</strong>.
               </p>
             </div>
             <div className="col-4">

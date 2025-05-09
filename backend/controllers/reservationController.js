@@ -45,6 +45,7 @@ exports.getReservationByID = async (req, res) => {
 
 //Tạo đơn đặt hàng mới
 exports.addReservations = async (req, res) => {
+  console.log(req.body);
   const {
     createdBy,
     customerName,

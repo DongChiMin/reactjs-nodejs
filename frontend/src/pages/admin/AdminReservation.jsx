@@ -103,32 +103,43 @@ function AdminReservation() {
       />
 
       {/* Giao diện start */}
-      <div className="section">
-        <div className="mb-5">
-          <h2 className="text-center">Admin Reservations</h2>
-        </div>
-        {/* Thông tin về các bàn trong ngày đã chọn: có thể làm thống kê  */}
-        <div>
-          <div className="row">
-            <div className="col-4 ps-4">
-              <div className="card">
-                <div className="card-body">
-                  <p className="mb-1 card-text">
-                    Total tables: {tables.length}
-                  </p>
-                  <p className="mb-1 card-text">
-                    Total reservations: {reservations.length}
-                  </p>
-                </div>
+      <div className="container">
+        <h2 className="text-center mb-3">Manage Reservations</h2>
+
+        <div className="row">
+          <div className="col-9">
+            <div className="card">
+              <div className="card-body">
+                <AreasAndTables
+                  tables={tables}
+                  reservations={reservations}
+                  onTableUpdated={() => {
+                    fetchTables();
+                    fetchReservations();
+                  }}
+                />
               </div>
             </div>
-            <div className="col-8 d-flex justify-content-center align-items-center">
-              <div
-                className="d-flex justify-content-end"
-                style={{ gap: "20px" }}
-              >
+          </div>
+          <div className="col-3">
+            {/* Thông tin về các bàn trong ngày đã chọn: có thể làm thống kê  */}
+            <div>
+              <div className="mb-5">
+                <div className="card">
+                  <div className="card-body">
+                    <p className="mb-1 card-text">
+                      Total tables: {tables.length}
+                    </p>
+                    <p className="mb-1 card-text">
+                      Total reservations: {reservations.length}
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
                 {/* Thêm bàn mới */}
                 <button
+                  className="mb-3"
                   onClick={() => {
                     const modal = new Modal(
                       document.getElementById("addTableModal")
@@ -152,16 +163,6 @@ function AdminReservation() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="container">
-          <AreasAndTables
-            tables={tables}
-            reservations={reservations}
-            onTableUpdated={() => {
-              fetchTables();
-              fetchReservations();
-            }}
-          />
         </div>
       </div>
     </main>

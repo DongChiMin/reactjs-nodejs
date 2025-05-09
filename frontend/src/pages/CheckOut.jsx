@@ -12,14 +12,12 @@ function CheckOut() {
   const navigate = useNavigate();
   const [items, setItems] = useState([]);
   const [selectedItems, setSelectedItems] = useState([]);
-  const [paymentMethod, setPaymentMethod] = useState("cod");
   const [formData, setFormData] = useState({
     customerName: "",
     phoneNumber: "",
     emailAddress: "",
     address: "",
   });
-  const [amount, setAmount] = useState(0);
 
   //các giá trị trong bảng, giá trị hàng hóa
   const selectedData = items
@@ -83,8 +81,6 @@ function CheckOut() {
       type: "select",
       options: [
         { label: "Cash on Delivery (COD)", value: "cod" },
-        { label: "Bank Transfer", value: "bank" },
-        { label: "E-Wallet (Momo, ZaloPay...)", value: "e-wallet" },
         { label: "VNPay", value: "vnpay" },
       ],
       required: true,
@@ -130,6 +126,7 @@ function CheckOut() {
         totalPrice: totalAmount,
         createdAt: new Date().toISOString(),
       };
+      const token = localStorage.getItem("token");
 
       if (data.paymentMethod === "vnpay") {
         // Gọi API create_payment_url để lấy URL thanh toán
@@ -137,23 +134,15 @@ function CheckOut() {
           "http://localhost:3001/api/payment/create_payment_url",
           {
             amount: totalAmount,
-            bankCode: data.bankCode || "", // Nếu có chọn ngân hàng
-            language: "vn",
-          },
-          {
-            headers: { Authorization: `Bearer ${token}` },
+            paymentMethod: "vnpay",
           }
         );
 
         if (response.data.paymentUrl) {
-          // Chuyển hướng đến VNPay
           window.location.href = response.data.paymentUrl;
         }
       } else {
-        // Xử lý các phương thức thanh toán khác
-        await axios.post("http://localhost:3001/api/orders/add", order, {
-          headers: { Authorization: `Bearer ${token}` },
-        });
+        await axios.post("http://localhost:3001/api/orders/add", order);
 
         const cart = JSON.parse(localStorage.getItem("cart")) || {};
         if (cart.items) {

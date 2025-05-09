@@ -1,5 +1,26 @@
 {
   "dependencies": {
-    "@mui/lab": "^7.0.0-beta.11"
-  }
+    "@mui/lab": "^7.0.0-beta.11",
+    "browser-image-compression": "^2.0.2",
+    "mongoose": "^8.13.2",
+    "validator": "^13.15.0"
+  },
+  "name": "reactjs-nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DongChiMin/reactjs-nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DongChiMin/reactjs-nodejs/issues"
+  },
+  "homepage": "https://github.com/DongChiMin/reactjs-nodejs#readme",
+  "description": ""
 }

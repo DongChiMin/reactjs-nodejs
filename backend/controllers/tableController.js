@@ -5,8 +5,6 @@ const Reservation = require("../models/reservationModel");
 // Thêm console.log để debug
 exports.getSeatingAreas = async (req, res) => {
   try {
-    console.log("Bắt đầu truy vấn seating areas...");
-
     const areas = await Table.aggregate([
       {
         $group: {
@@ -17,10 +15,10 @@ exports.getSeatingAreas = async (req, res) => {
       { $sort: { _id: 1 } },
     ]);
 
-    console.log("Kết quả aggregation:", areas);
+    // console.log("Kết quả aggregation:", areas);
 
     const areaNames = areas.map((area) => area._id).filter(Boolean);
-    console.log("Danh sách khu vực sau khi xử lý:", areaNames);
+    // console.log("Danh sách khu vực sau khi xử lý:", areaNames);
 
     res.status(200).json({
       success: true,
@@ -182,7 +180,7 @@ exports.deleteTable = async (req, res) => {
 
       // Lưu lại thông tin đã cập nhật
       const updatedReservation = await reservation.save();
-      console.log("Dữ liệu mới của đơn", updatedReservation);
+      // console.log("Dữ liệu mới của đơn", updatedReservation);
     }
 
     // Tìm bàn theo id và xóa

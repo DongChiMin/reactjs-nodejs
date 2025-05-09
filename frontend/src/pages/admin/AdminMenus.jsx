@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Modal } from "bootstrap";
 
 const categories = ["drink", "mainCourse", "dessert", "appetizer"];
 
 function AdminMenus() {
   const [menus, setMenus] = useState([]);
   const [editMenu, setEditMenu] = useState(null);
+  const [searchKeyword, setSearchKeyword] = useState("");
+  const [currentPage, setCurrentPage] = useState(1); // ✅ thêm current page
+  const menusPerPage = 5; // ✅ số lượng món ăn trên mỗi trang
+
   const [newMenu, setNewMenu] = useState({
     name: "",
     description: "",
@@ -14,7 +19,7 @@ function AdminMenus() {
     price: "",
     imageBuffer: null,
     fileName: "",
-    previewUrl: "", 
+    previewUrl: "",
   });
 
   useEffect(() => {
@@ -29,6 +34,21 @@ function AdminMenus() {
       console.error("Error fetching menus:", err);
     }
   };
+
+  // Filter menus based on search keyword
+  const filteredMenus = menus.filter(
+    (menu) =>
+      menu.name?.toLowerCase().includes(searchKeyword.toLowerCase()) ||
+      menu.category?.toLowerCase().includes(searchKeyword.toLowerCase()) ||
+      menu.description?.toLowerCase().includes(searchKeyword.toLowerCase())
+  );
+
+  // ✅ Phân trang: Tính toán danh sách menu cần hiển thị
+  const indexOfLastMenu = currentPage * menusPerPage;
+  const indexOfFirstMenu = indexOfLastMenu - menusPerPage;
+  const currentMenus = filteredMenus.slice(indexOfFirstMenu, indexOfLastMenu);
+
+  const totalPages = Math.ceil(filteredMenus.length / menusPerPage);
 
   const handleDelete = async (id) => {
     if (window.confirm("Are you sure you want to delete this menu?")) {
@@ -80,9 +100,10 @@ function AdminMenus() {
     formData.append("image", file);
     formData.append("category", newMenu.category);
 
-    axios.post("http://localhost:3001/api/upload", formData, {
-      headers: { "Content-Type": "multipart/form-data" },
-    })
+    axios
+      .post("http://localhost:3001/api/upload", formData, {
+        headers: { "Content-Type": "multipart/form-data" },
+      })
       .then((response) => {
         const { fileName, category, imageBuffer } = response.data;
         setNewMenu({
@@ -99,16 +120,18 @@ function AdminMenus() {
   };
 
   const handleCreateMenu = () => {
-    const { name, description, price, category, fileName, imageBuffer } = newMenu;
+    const { name, description, price, category, fileName, imageBuffer } =
+      newMenu;
 
-    axios.post("http://localhost:3001/api/menus", {
-      name,
-      description,
-      price,
-      category,
-      fileName,
-      imageBuffer,
-    })
+    axios
+      .post("http://localhost:3001/api/menus", {
+        name,
+        description,
+        price,
+        category,
+        fileName,
+        imageBuffer,
+      })
       .then((res) => {
         alert("Menu created successfully");
         setNewMenu({
@@ -128,205 +151,338 @@ function AdminMenus() {
       });
   };
 
-  return (
-    <div className="container mt-5">
-      <h2>Admin: Manage Menus</h2>
+  const handlePageChange = (pageNumber) => {
+    if (pageNumber >= 1 && pageNumber <= totalPages) {
+      setCurrentPage(pageNumber);
+    }
+  };
 
-      <div>
-        <h3>Add New Menu</h3>
-        <form>
-          <div className="mb-3">
-            <label>Name</label>
-            <input
-              type="text"
-              name="name"
-              value={newMenu.name}
-              onChange={handleNewMenuChange}
-              className="form-control"
-            />
+  return (
+    <div className="container">
+      {/* //Modal add new */}
+      <div className="modal fade" id="addNewMenu">
+        <div className="modal-dialog modal-lg">
+          <div className="modal-content">
+            {/* <!-- Modal Header --> */}
+            <div className="modal-header">
+              <h4 className="modal-title" style={{ fontSize: "30px" }}>
+                Add new dish to menu
+              </h4>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            {/* <!-- Modal body --> */}
+            <div className="modal-body">
+              <form>
+                <div className="mb-3">
+                  <label>Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    value={newMenu.name}
+                    onChange={handleNewMenuChange}
+                    className="form-control"
+                  />
+                </div>
+                <div className="mb-3">
+                  <label>Description</label>
+                  <textarea
+                    name="description"
+                    value={newMenu.description}
+                    onChange={handleNewMenuChange}
+                    className="form-control"
+                  ></textarea>
+                </div>
+                <div className="mb-3">
+                  <label>Image</label>
+                  <input
+                    type="file"
+                    accept="image/*"
+                    onChange={handleImageUpload}
+                    className="form-control"
+                  />
+                  {newMenu.previewUrl && (
+                    <img
+                      src={newMenu.previewUrl}
+                      alt="Preview"
+                      style={{
+                        width: "100px",
+                        marginTop: "10px",
+                        border: "1px solid #ccc",
+                      }}
+                    />
+                  )}
+                </div>
+                <div className="mb-3">
+                  <label>Category</label>
+                  <select
+                    name="category"
+                    value={newMenu.category}
+                    onChange={handleNewMenuChange}
+                    className="form-control"
+                  >
+                    <option value="">-- Select Category --</option>
+                    {categories.map((cat) => (
+                      <option key={cat} value={cat}>
+                        {cat}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+                <div className="mb-3">
+                  <label>Price</label>
+                  <input
+                    type="number"
+                    name="price"
+                    value={newMenu.price}
+                    onChange={handleNewMenuChange}
+                    className="form-control"
+                  />
+                </div>
+
+                <div className=" d-flex justify-content-between  mt-5">
+                  <button
+                    type="button"
+                    data-bs-dismiss="modal"
+                    className="btn-select"
+                  >
+                    Close
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleCreateMenu}
+                    className="btn-select selected"
+                  >
+                    Create
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            {/* <!-- Modal footer --> */}
           </div>
-          <div className="mb-3">
-            <label>Description</label>
-            <textarea
-              name="description"
-              value={newMenu.description}
-              onChange={handleNewMenuChange}
-              className="form-control"
-            ></textarea>
-          </div>
-          <div className="mb-3">
-            <label>Image</label>
-            <input
-              type="file"
-              accept="image/*"
-              onChange={handleImageUpload}
-              className="form-control"
-            />
-            {newMenu.previewUrl && (
-              <img
-                src={newMenu.previewUrl}
-                alt="Preview"
-                style={{ width: "100px", marginTop: "10px", border: "1px solid #ccc" }}
-              />
-            )}
-          </div>
-          <div className="mb-3">
-            <label>Category</label>
-            <select
-              name="category"
-              value={newMenu.category}
-              onChange={handleNewMenuChange}
-              className="form-control"
-            >
-              <option value="">-- Select Category --</option>
-              {categories.map((cat) => (
-                <option key={cat} value={cat}>
-                  {cat}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div className="mb-3">
-            <label>Price</label>
-            <input
-              type="number"
-              name="price"
-              value={newMenu.price}
-              onChange={handleNewMenuChange}
-              className="form-control"
-            />
-          </div>
-          <button
-            type="button"
-            onClick={handleCreateMenu}
-            className="btn btn-primary"
-          >
-            Add Menu
-          </button>
-        </form>
+        </div>
       </div>
 
-      {editMenu ? (
-        <div>
-          <h3>Edit Menu</h3>
-          <form>
-            <div className="mb-3">
-              <label>Name</label>
-              <input
-                type="text"
-                name="name"
-                value={editMenu.name}
-                onChange={handleChange}
-                className="form-control"
-              />
+      <h2 className="text-center mb-3">Manage Menus</h2>
+
+      <div className="d-flex align-items-center justify-content-center gap-3 mb-2 text-center">
+        <span style={{ fontWeight: "bold", marginRight: "10px" }}>Search:</span>
+        <input
+          type="text"
+          className="form-control w-50"
+          placeholder="Search by name, category or description..."
+          value={searchKeyword}
+          onChange={(e) => {
+            setSearchKeyword(e.target.value);
+            setCurrentPage(1); // ✅ reset về page 1 khi tìm kiếm
+          }}
+        />
+
+        <button
+          onClick={() => {
+            const modal = new Modal(document.getElementById("addNewMenu"));
+            modal.show();
+          }}
+        >
+          Add menu
+        </button>
+      </div>
+
+      <div>
+        {/* Menu Table */}
+        <div className="card">
+          <div className="card-body">
+            <div>
+              <span style={{ fontWeight: "bold", fontSize: "20px" }}>
+                Menus List
+              </span>
             </div>
-            <div className="mb-3">
-              <label>Description</label>
-              <textarea
-                name="description"
-                value={editMenu.description}
-                onChange={handleChange}
-                className="form-control"
-              ></textarea>
-            </div>
-            <div className="mb-3">
-              <label>Image URL</label>
-              <input
-                type="text"
-                name="imageUrl"
-                value={editMenu.imageUrl}
-                onChange={handleChange}
-                className="form-control"
-              />
-              {editMenu.imageUrl && (
-              <img
-                src={`http://localhost:3001${editMenu.imageUrl}`}
-                alt="Preview"
-                style={{ width: "100px", marginTop: "10px", border: "1px solid #ccc" }}
-              />
-            )}
-            </div>
-            <div className="mb-3">
-              <label>Category</label>
-              <select
-                name="category"
-                value={editMenu.category}
-                onChange={handleChange}
-                className="form-control"
-              >
-                <option value="">-- Select Category --</option>
-                {categories.map((cat) => (
-                  <option key={cat} value={cat}>
-                    {cat}
-                  </option>
-                ))}
-              </select>
-            </div>
-            <div className="mb-3">
-              <label>Price</label>
-              <input
-                type="number"
-                name="price"
-                value={editMenu.price}
-                onChange={handleChange}
-                className="form-control"
-              />
-            </div>
-            <button
-              type="button"
-              onClick={handleSave}
-              className="btn btn-success"
-            >
-              Save
-            </button>
-            <button
-              type="button"
-              onClick={() => setEditMenu(null)}
-              className="btn btn-secondary ms-2"
-            >
-              Cancel
-            </button>
-          </form>
-        </div>
-      ) : (
-        <div>
-          <table className="table mt-4">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Category</th>
-                <th>Price</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              {menus.map((menu) => (
-                <tr key={menu._id}>
-                  <td>{menu.name}</td>
-                  <td>{menu.description}</td>
-                  <td>{menu.category}</td>
-                  <td>${menu.price ? Number(menu.price).toFixed(2) : "0.00"}</td>
-                  <td>
-                    <button
-                      className="btn btn-primary me-2"
-                      onClick={() => handleEdit(menu)}
-                    >
-                      Edit
-                    </button>
-                    <button
-                      className="btn btn-danger"
-                      onClick={() => handleDelete(menu._id)}
-                    >
-                      Delete
-                    </button>
-                  </td>
+            <table className="table table-striped">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Description</th>
+                  <th>Category</th>
+                  <th>Price</th>
+                  <th>Actions</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                 {currentMenus.map((menu) => (
+                  <tr key={menu._id}>
+                    <td>{menu.name}</td>
+                    <td>{menu.description}</td>
+                    <td>{menu.category}</td>
+                    <td>
+                      ${menu.price ? Number(menu.price).toFixed(2) : "0.00"}
+                    </td>
+                    <td>
+                      <button
+                        className="btn-select selected"
+                        data-bs-toggle="modal"
+                        data-bs-target="#editMenuModal"
+                        onClick={() => setEditMenu(menu)}
+                      >
+                        Edit
+                      </button>
+                      <button
+                        className="btn-select"
+                        onClick={() => handleDelete(menu._id)}
+                      >
+                        Delete
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+                        {/* ✅ Thêm phân trang */}
+
+                        <div className="d-flex justify-content-center align-items-center mt-3 gap-3">
+
+            <button
+              className=""
+              onClick={() => handlePageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+            >
+              Previous
+            </button>
+            <span>Page {currentPage} of {totalPages}</span>
+            <button
+              className=""
+              onClick={() => handlePageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+            >
+              Next
+            </button>
+            </div>
+          </div>
         </div>
-      )}
+
+        {/* Edit Menu Modal */}
+
+        <div
+          className="modal fade"
+          id="editMenuModal"
+          tabIndex="-1"
+          aria-labelledby="editMenuModalLabel"
+          aria-hidden="true"
+        >
+          <div className="modal-dialog modal-lg">
+            <div className="modal-content ">
+              <div className="modal-header">
+                <h5
+                  className="modal-title"
+                  style={{ fontSize: "30px" }}
+                  id="editMenuModalLabel"
+                >
+                  Edit Menu
+                </h5>
+                <button
+                  type="button"
+                  className="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div className="modal-body">
+                {editMenu && (
+                  <form>
+                    <div className="mb-3">
+                      <label className="form-label">Name</label>
+                      <input
+                        type="text"
+                        name="name"
+                        value={editMenu.name}
+                        onChange={handleChange}
+                        className="form-control"
+                      />
+                    </div>
+                    <div className="mb-3">
+                      <label className="form-label">Description</label>
+                      <textarea
+                        name="description"
+                        value={editMenu.description}
+                        onChange={handleChange}
+                        className="form-control"
+                      ></textarea>
+                    </div>
+                    <div className="mb-3">
+                      <label className="form-label">Image URL</label>
+                      <input
+                        type="text"
+                        name="imageUrl"
+                        value={editMenu.imageUrl}
+                        onChange={handleChange}
+                        className="form-control"
+                      />
+                      {editMenu.imageUrl && (
+                        <img
+                          src={`http://localhost:3001${editMenu.imageUrl}`}
+                          alt="Preview"
+                          style={{
+                            width: "100px",
+                            marginTop: "10px",
+                            border: "1px solid #ccc",
+                          }}
+                        />
+                      )}
+                    </div>
+                    <div className="mb-3">
+                      <label className="form-label">Category</label>
+                      <select
+                        name="category"
+                        value={editMenu.category}
+                        onChange={handleChange}
+                        className="form-control"
+                      >
+                        <option value="">-- Select Category --</option>
+                        {categories.map((cat) => (
+                          <option key={cat} value={cat}>
+                            {cat}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+                    <div className="mb-3">
+                      <label className="form-label">Price</label>
+                      <input
+                        type="number"
+                        name="price"
+                        value={editMenu.price}
+                        onChange={handleChange}
+                        className="form-control"
+                      />
+                    </div>
+                  </form>
+                )}
+              </div>
+              <div className="modal-footer">
+                <button
+                  type="button"
+                  className="btn-select"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button
+                  type="button"
+                  className="btn-select selected"
+                  onClick={handleSave}
+                  data-bs-dismiss="modal"
+                >
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

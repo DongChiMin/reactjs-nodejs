@@ -21,6 +21,10 @@ const CustomForm = ({ fields, onSubmit, buttonText = "Place order", initialValue
     setFormData((prev) => ({
       ...prev,
       ...initialValues,
+      customerName: formData.customerName,
+      phoneNumber: formData.phoneNumber,
+      emailAddress: formData.emailAddress,
+      address: formData.address,
     }));
   }, [initialValues]);
 

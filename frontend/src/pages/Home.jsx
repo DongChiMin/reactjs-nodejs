@@ -7,8 +7,9 @@ import ButtonWhite from "../components/Buttons/ButtonWhite";
 import BasicSlider from "../components/Slider/BasicSlider";
 import Reservation from "../components/Forms/Reservation";
 import ContactBox from "../components/Box/ContactBox";
+import ReservationForm from "../components/ReservationForm";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 // media
@@ -29,9 +30,21 @@ import imgBeginnerClass from "../assets/images/beginner-class.jpg";
 import imgAdvanceClass from "../assets/images/advance-class.jpg";
 
 function Home() {
+  const location = useLocation();
+
   useEffect(() => {
+    const queryParams = new URLSearchParams(location.search);
+    const paymentStatus = queryParams.get("paymentStatus");
+
+    if (paymentStatus === "success") {
+      alert("Thanh toán thành công! Đơn hàng của bạn đã được cập nhật.");
+    } else if (paymentStatus === "failed") {
+      alert("Thanh toán thất bại. Vui lòng thử lại.");
+    } else if (paymentStatus === "checksum_failed") {
+      alert("Lỗi xác thực chữ ký. Vui lòng liên hệ hỗ trợ.");
+    }
     window.scrollTo(0, 0); // Cuộn lên đầu khi trang được mount
-  }, []);
+  }, [location]);
 
   return (
     <div>
@@ -258,12 +271,10 @@ function Home() {
           </div>
           <div className="col-1"></div>
           <div className="col-5 p-2" style={{ backgroundColor: "white" }}>
-            <Reservation
-              title={"Table Reservation"}
-              description={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, cumque."
-              }
-            />
+            <h5 className="text-center mt-3" style={{ fontSize: "30px" }}>
+              Book a table
+            </h5>
+            <ReservationForm />
           </div>
         </div>
       </div>

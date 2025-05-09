@@ -2,21 +2,41 @@ import React, { useState } from "react";
 import TextField from "@mui/material/TextField";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
+import { useEffect } from "react";
 
 import { Modal } from "bootstrap";
 
 const ReservationTable = ({ isInModal = false }) => {
+  const [seatingAreas, setSeatingAreas] = useState([]);
   const [formData, setFormData] = useState({
+    createdBy: "customer",
     customerName: "",
     emailAddress: "",
     phoneNumber: "",
     numberOfGuest: "",
     seatingArea: "", // Để chọn từ dropdown
+    tableType: "",
     status: "pending",
     note: "",
     dateTime: "", // for date
     createdAt: new Date().toISOString(),
   });
+
+  // Fetch seating areas when component mounts
+  useEffect(() => {
+    const fetchSeatingAreas = async () => {
+      try {
+        const areaRes = await axios.get(
+          "http://localhost:3001/api/tables/get/seating-areas"
+        );
+        setSeatingAreas(areaRes.data.data || []);
+      } catch (error) {
+        console.error("Lỗi khi tải khu vực ngồi:", error);
+      }
+    };
+
+    fetchSeatingAreas();
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -34,7 +54,6 @@ const ReservationTable = ({ isInModal = false }) => {
       const response = await axios.post(
         "http://localhost:3001/api/reservations/add",
         {
-          createdBy: "user",
           ...formData,
         }
       );
@@ -67,7 +86,7 @@ const ReservationTable = ({ isInModal = false }) => {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container">
       <form onSubmit={handleSubmit} className="bg-light p-4 rounded shadow-sm">
         <div className="mb-3">
           <label className="form-label">Customer Name</label>
@@ -122,10 +141,28 @@ const ReservationTable = ({ isInModal = false }) => {
             onChange={handleChange}
             required
           >
-            <option value="">Select a seating area</option>
-            <option value="Indoor Area A">Indoor Area A</option>
-            <option value="Indoor Area B">Indoor Area B</option>
-            <option value="Outdoor Area A">Outdoor Area A</option>
+            <option value="">----Select Area----</option>
+            {seatingAreas.map((area) => (
+              <option key={area} value={area}>
+                {area}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="mb-3">
+          <label className="form-label">Table Type</label>
+          <select
+            className="form-control"
+            name="tableType"
+            value={formData.tableType}
+            onChange={handleChange}
+            required
+          >
+            <option value="">Select a table Type</option>
+            <option value="Standard">Standard</option>
+            <option value="Vip">Vip</option>
+            <option value="Family">Family</option>
+            <option value="Bar">Bar</option>
           </select>
         </div>
         <div className="mb-3">

@@ -5,6 +5,8 @@ import ButtonWhite from "../Buttons/ButtonWhite";
 
 import CartItem from "../CartItem";
 
+import { Offcanvas } from "bootstrap";
+
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -23,9 +25,12 @@ function Header() {
       const token = localStorage.getItem("token");
       if (!token) return;
 
-      const response = await axios.get("http://localhost:3001/api/auth/user/info", {
-        headers: { Authorization: `Bearer ${token}` },
-      });
+      const response = await axios.get(
+        "http://localhost:3001/api/auth/user/info",
+        {
+          headers: { Authorization: `Bearer ${token}` },
+        }
+      );
       setUser(response.data);
       setIsLoggedIn(true);
     } catch (err) {
@@ -136,10 +141,15 @@ function Header() {
                 item={item}
                 onIncrease={(id) => {
                   const updatedItems = items.map((item) =>
-                    item._id === id ? { ...item, quantity: item.quantity + 1 } : item
+                    item._id === id
+                      ? { ...item, quantity: item.quantity + 1 }
+                      : item
                   );
                   setItems(updatedItems);
-                  localStorage.setItem("cart", JSON.stringify({ items: updatedItems }));
+                  localStorage.setItem(
+                    "cart",
+                    JSON.stringify({ items: updatedItems })
+                  );
                   window.dispatchEvent(new Event("cartUpdated"));
                 }}
                 onDecrease={(id) => {
@@ -149,7 +159,10 @@ function Header() {
                       : item
                   );
                   setItems(updatedItems);
-                  localStorage.setItem("cart", JSON.stringify({ items: updatedItems }));
+                  localStorage.setItem(
+                    "cart",
+                    JSON.stringify({ items: updatedItems })
+                  );
                   window.dispatchEvent(new Event("cartUpdated"));
                 }}
                 onDelete={(id) => {
@@ -157,9 +170,14 @@ function Header() {
                     "Are you sure you want to delete this item?"
                   );
                   if (confirmDelete) {
-                    const updatedItems = items.filter((item) => item._id !== id);
+                    const updatedItems = items.filter(
+                      (item) => item._id !== id
+                    );
                     setItems(updatedItems);
-                    localStorage.setItem("cart", JSON.stringify({ items: updatedItems }));
+                    localStorage.setItem(
+                      "cart",
+                      JSON.stringify({ items: updatedItems })
+                    );
                     window.dispatchEvent(new Event("cartUpdated"));
                   }
                 }}
@@ -213,14 +231,18 @@ function Header() {
                 <ButtonWhite
                   buttontext={`Cart (${items.length})`}
                   type="button"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#cartSideBar"
+                  onClick={() => {
+                    const offCanvas = new Offcanvas(
+                      document.getElementById("cartSideBar")
+                    );
+                    offCanvas.show();
+                  }}
                 />
               </div>
               <ul className={styles.mainMenus}>
-                <li>
+                {/* <li>
                   <Link to="/">Home</Link>
-                </li>
+                </li> */}
                 <li>
                   <Link to="/chefs">Chefs</Link>
                 </li>
@@ -248,7 +270,7 @@ function Header() {
                   <li>
                     <Link to="/shop">Shop</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <div className="dropdown">
                       <div
                         className={
@@ -273,7 +295,7 @@ function Header() {
                         </li>
                       </ul>
                     </div>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to="/reservation">Book table</Link>
                   </li>
@@ -285,13 +307,15 @@ function Header() {
                     className="dropdown"
                     onMouseEnter={(e) => {
                       const button = e.currentTarget.querySelector("button");
-                      const menu = e.currentTarget.querySelector(".dropdown-menu");
+                      const menu =
+                        e.currentTarget.querySelector(".dropdown-menu");
                       button.classList.add("show");
                       menu.classList.add("show");
                     }}
                     onMouseLeave={(e) => {
                       const button = e.currentTarget.querySelector("button");
-                      const menu = e.currentTarget.querySelector(".dropdown-menu");
+                      const menu =
+                        e.currentTarget.querySelector(".dropdown-menu");
                       button.classList.remove("show");
                       menu.classList.remove("show");
                     }}
@@ -305,13 +329,19 @@ function Header() {
                       style={{ cursor: "pointer" }}
                     >
                       <img
-                        src={user?.avatar || "http://localhost:3001/uploads/default-avatar.png.jpeg"}
+                        src={
+                          user?.avatar ||
+                          "http://localhost:3001/uploads/default-avatar.png.jpeg"
+                        }
                         alt="User Avatar"
                         className="rounded-circle"
                         style={{ width: "40px", height: "40px" }}
                       />
                     </button>
-                    <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                    <ul
+                      className="dropdown-menu dropdown-menu-end"
+                      aria-labelledby="userDropdown"
+                    >
                       <li>
                         <Link className="dropdown-item" to="/user-info">
                           User Info
@@ -328,9 +358,14 @@ function Header() {
                         </Link>
                       </li>
                       <li>
-                        <button className="dropdown-item" onClick={handleLogout}>
-                          Logout
-                        </button>
+                        <Link
+                          className="dropdown-item"
+                          onClick={handleLogout}
+                          style={{ fontFamily: "JosefinSans" }}
+                          to="/"
+                        >
+                          Log out
+                        </Link>
                       </li>
                     </ul>
                   </div>

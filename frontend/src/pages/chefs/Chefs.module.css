@@ -1,0 +1,20 @@
+/* Chefs.module.css */
+.chefImg {
+  height: 250px;
+  object-fit: cover;
+}
+
+.chefName {
+  font-size: 2rem; /* hoặc 0.9rem, 14px... tuỳ bạn */
+  font-weight: 600; /* nhẹ hơn nếu cần */
+}
+
+.chefCard {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.chefCard:hover {
+  transform: translateY(-5px); /* nổi lên một chút */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* đổ bóng nhẹ */
+}
