@@ -1,0 +1,285 @@
+[{
+  "_id": {
+    "$oid": "682106c65660b93033e46ca8"
+  },
+  "tableNumber": 1,
+  "seatingArea": "The Garden Nook",
+  "tableType": "Standard",
+  "capacity": 4,
+  "note": "A table area with a focus on plants or greenery, offering a calm and natural atmosphere.",
+  "createdAt": {
+    "$date": "2025-05-11T20:21:26.853Z"
+  },
+  "bookingHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682106f45660b93033e46cb2"
+  },
+  "tableNumber": 2,
+  "seatingArea": "The Wine Cellar",
+  "tableType": "Bar",
+  "capacity": 20,
+  "note": "A designated area with a selection of fine wines, perfect for wine lovers.",
+  "createdAt": {
+    "$date": "2025-05-11T20:22:12.839Z"
+  },
+  "bookingHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6821074b5660b93033e46cbc"
+  },
+  "tableNumber": 3,
+  "seatingArea": "The Chef’s Table",
+  "tableType": "VIP",
+  "capacity": 6,
+  "note": "A premium, exclusive area where diners can enjoy a personalized experience.",
+  "createdAt": {
+    "$date": "2025-05-11T20:23:39.520Z"
+  },
+  "bookingHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6821076d5660b93033e46cc6"
+  },
+  "tableNumber": 4,
+  "seatingArea": "The Patio Perch",
+  "tableType": "Family",
+  "capacity": 10,
+  "note": "A spot with outdoor seating for those who enjoy fresh air and views.",
+  "createdAt": {
+    "$date": "2025-05-11T20:24:13.840Z"
+  },
+  "bookingHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682107fb5660b93033e46cd0"
+  },
+  "tableNumber": 5,
+  "seatingArea": "The Chef’s Table",
+  "tableType": "Family",
+  "capacity": 8,
+  "note": "A premium, exclusive area where diners can enjoy a personalized experience.",
+  "createdAt": {
+    "$date": "2025-05-11T20:26:35.701Z"
+  },
+  "bookingHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682108495660b93033e46cda"
+  },
+  "tableNumber": 6,
+  "seatingArea": "The Garden Nook",
+  "tableType": "VIP",
+  "capacity": 8,
+  "note": "A table area with a focus on plants or greenery, offering a calm and natural atmosphere.",
+  "createdAt": {
+    "$date": "2025-05-11T20:27:53.472Z"
+  },
+  "bookingHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682108685660b93033e46ce4"
+  },
+  "tableNumber": 7,
+  "seatingArea": "The Patio Perch",
+  "tableType": "Standard",
+  "capacity": 4,
+  "note": "A spot with outdoor seating for those who enjoy fresh air and views.",
+  "createdAt": {
+    "$date": "2025-05-11T20:28:24.946Z"
+  },
+  "bookingHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682108795660b93033e46cee"
+  },
+  "tableNumber": 8,
+  "seatingArea": "The Wine Cellar",
+  "tableType": "VIP",
+  "capacity": 5,
+  "note": "A designated area with a selection of fine wines, perfect for wine lovers.",
+  "createdAt": {
+    "$date": "2025-05-11T20:28:41.240Z"
+  },
+  "bookingHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682108815660b93033e46cf8"
+  },
+  "tableNumber": 9,
+  "seatingArea": "The Wine Cellar",
+  "tableType": "Standard",
+  "capacity": 4,
+  "note": "A designated area with a selection of fine wines, perfect for wine lovers.",
+  "createdAt": {
+    "$date": "2025-05-11T20:28:49.717Z"
+  },
+  "bookingHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682108925660b93033e46d02"
+  },
+  "tableNumber": 10,
+  "seatingArea": "The Wine Cellar",
+  "tableType": "Family",
+  "capacity": 10,
+  "note": "A designated area with a selection of fine wines, perfect for wine lovers.",
+  "createdAt": {
+    "$date": "2025-05-11T20:29:06.852Z"
+  },
+  "bookingHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682108e45660b93033e46d0c"
+  },
+  "tableNumber": 11,
+  "seatingArea": "The Patio Perch",
+  "tableType": "Bar",
+  "capacity": 15,
+  "note": "A spot with outdoor seating for those who enjoy fresh air and views.",
+  "createdAt": {
+    "$date": "2025-05-11T20:30:28.777Z"
+  },
+  "bookingHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682108f95660b93033e46d16"
+  },
+  "tableNumber": 12,
+  "seatingArea": "The Garden Nook",
+  "tableType": "Family",
+  "capacity": 12,
+  "note": "A table area with a focus on plants or greenery, offering a calm and natural atmosphere.",
+  "createdAt": {
+    "$date": "2025-05-11T20:30:49.882Z"
+  },
+  "bookingHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682109075660b93033e46d20"
+  },
+  "tableNumber": 13,
+  "seatingArea": "The Chef’s Table",
+  "tableType": "Standard",
+  "capacity": 4,
+  "note": "A premium, exclusive area where diners can enjoy a personalized experience.",
+  "createdAt": {
+    "$date": "2025-05-11T20:31:03.885Z"
+  },
+  "bookingHistory": [
+    {
+      "reservationId": {
+        "$oid": "68210bf85660b93033e46dc4"
+      },
+      "startTime": {
+        "$date": "2025-05-30T11:43:00.000Z"
+      },
+      "endTime": {
+        "$date": "2025-05-30T13:43:00.000Z"
+      },
+      "_id": {
+        "$oid": "68210c125660b93033e46dd8"
+      }
+    }
+  ],
+  "__v": 1
+},
+{
+  "_id": {
+    "$oid": "6821094f5660b93033e46d2a"
+  },
+  "tableNumber": 14,
+  "seatingArea": "The Garden Nook",
+  "tableType": "Standard",
+  "capacity": 4,
+  "note": "A table area with a focus on plants or greenery, offering a calm and natural atmosphere.",
+  "createdAt": {
+    "$date": "2025-05-11T20:32:15.971Z"
+  },
+  "bookingHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6821095b5660b93033e46d34"
+  },
+  "tableNumber": 15,
+  "seatingArea": "The Garden Nook",
+  "tableType": "VIP",
+  "capacity": 5,
+  "note": "A table area with a focus on plants or greenery, offering a calm and natural atmosphere.",
+  "createdAt": {
+    "$date": "2025-05-11T20:32:27.908Z"
+  },
+  "bookingHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682109785660b93033e46d3e"
+  },
+  "tableNumber": 16,
+  "seatingArea": "The Chef’s Table",
+  "tableType": "Family",
+  "capacity": 8,
+  "note": "A premium, exclusive area where diners can enjoy a personalized experience.",
+  "createdAt": {
+    "$date": "2025-05-11T20:32:56.442Z"
+  },
+  "bookingHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6821098f5660b93033e46d48"
+  },
+  "tableNumber": 17,
+  "seatingArea": "The Patio Perch",
+  "tableType": "VIP",
+  "capacity": 6,
+  "note": "A spot with outdoor seating for those who enjoy fresh air and views.",
+  "createdAt": {
+    "$date": "2025-05-11T20:33:19.989Z"
+  },
+  "bookingHistory": [],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68210b465660b93033e46db7"
+  },
+  "tableNumber": 18,
+  "seatingArea": "The Patio Perch",
+  "tableType": "Family",
+  "capacity": 8,
+  "note": "A spot with outdoor seating for those who enjoy fresh air and views.",
+  "createdAt": {
+    "$date": "2025-05-11T20:40:38.055Z"
+  },
+  "bookingHistory": [],
+  "__v": 0
+}]
