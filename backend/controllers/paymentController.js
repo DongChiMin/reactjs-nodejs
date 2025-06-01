@@ -2,7 +2,7 @@ const moment = require("moment");
 const crypto = require("crypto");
 let { vnp_TmnCode, vnp_HashSecret, vnp_Url, vnp_ReturnUrl } = require("../config/vnpConfig");
 const { sortObject } = require("../utils/vnpay");
-const Order = require("../models/orderModel"); 
+const Order = require("../models/orderModel");
 
 exports.createPayment = (req, res) => {
   const { amount, bankCode, language, currency, orderId } = req.body;

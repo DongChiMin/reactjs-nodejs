@@ -1,4 +1,5 @@
-const Order = require("../models/orderModel"); // import model
+const Order = require("../models/orderModel"); 
+const User = require("../models/userModel");
 
 // Controller để thêm một order
 const addOrder = async (req, res) => {
@@ -160,4 +161,49 @@ const updateOrderStatus = async (req, res) => {
   }
 };
 
-module.exports = { addOrder, getOrders, getUserOrders, getOrderById, updateOrder, deleteOrder, updateOrderStatus, };
+const getOrderStatistics = async (req, res) => {
+  try {
+    const totalOrders = await Order.countDocuments();
+    const totalRevenue = await Order.aggregate([
+      { $match: { status: "completed" } },
+      { $group: { _id: null, total: { $sum: "$totalPrice" } } },
+    ]);
+    const pendingOrders = await Order.countDocuments({ status: "pending" });
+    const deliveringOrders = await Order.countDocuments({ status: "delivering" });
+    const completedOrders = await Order.countDocuments({ status: "completed" });
+    const cancelledOrders = await Order.countDocuments({ status: "cancelled" });
+    const totalCustomers = await User.countDocuments({ role: "user" });
+
+    res.json({
+      totalOrders,
+      totalRevenue: totalRevenue[0]?.total || 0,
+      pendingOrders,
+      deliveringOrders,
+      completedOrders,
+      cancelledOrders,
+      totalCustomers,
+    });
+  } catch (err) {
+    res.status(500).json({ message: "Server error", error: err.message });
+  }
+};
+
+const getOrderStatsByMonth = async (req, res) => {
+  try {
+    const stats = await Order.aggregate([
+      {
+        $group: {
+          _id: { year: { $year: "$date" }, month: { $month: "$date" } },
+          totalOrders: { $sum: 1 },
+          totalRevenue: { $sum: "$totalPrice" }
+        }
+      },
+      { $sort: { "_id.year": 1, "_id.month": 1 } }
+    ]);
+    res.json(stats);
+  } catch (err) {
+    res.status(500).json({ message: "Server error", error: err.message });
+  }
+};
+
+module.exports = { addOrder, getOrders, getUserOrders, getOrderById, updateOrder, deleteOrder, updateOrderStatus, getOrderStatistics, getOrderStatsByMonth };

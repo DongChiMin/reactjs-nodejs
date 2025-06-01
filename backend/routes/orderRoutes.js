@@ -14,6 +14,13 @@ router.get("/getOrders", authenticateToken, orderController.getOrders);
 // Route lấy đơn hàng của người dùng
 router.get("/my-orders", authenticateToken, orderController.getUserOrders);
 
+
+// Route thống kê đơn hàng (admin)
+router.get("/statistics", adminMiddleware, orderController.getOrderStatistics);
+
+// Route thống kê đơn hàng theo tháng (admin)
+router.get("/stats-by-month", adminMiddleware, orderController.getOrderStatsByMonth);
+
 // Route lấy chi tiết đơn hàng theo ID
 router.get("/:id", authenticateToken, orderController.getOrderById);
 
