@@ -1,0 +1,182 @@
+[{
+  "_id": {
+    "$oid": "6820e194020be4deb9d09ece"
+  },
+  "name": "Hajime Yoneda",
+  "specialty": "French-Japanese cuisine",
+  "imageUrl": "chefs/1746985364245.jpg",
+  "experience": 21,
+  "contact": "55000021911",
+  "awards": "3 Michelin Stars (2009) – Fastest to achieve this distinction in Michelin history.\r\nAsia’s 50 Best Restaurants – Ambassador for Japan.\r\nThe Best Chef Awards – Recognized among the world's top chefs.\r\nTHEBEST24 World Class – Awarded for achieving 40% or more of the maximum points.",
+  "description": "Chef Yoneda transitioned from a career in electronic engineering to pursue his passion for cooking at age 26. He studied at culinary school in Osaka, trained in France, and later opened his restaurant, HAJIME, in Osaka in 2008.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820ed8e5660b93033e46c0e"
+  },
+  "name": "Joachim Wissler",
+  "specialty": "German cuisine",
+  "imageUrl": "chefs/1746988504065.jpg",
+  "experience": 40,
+  "contact": "492204420",
+  "awards": "3 Michelin Stars (achieved in 2004)\r\nGault Millau \"Chef of the Year\" (2003)\r\nDer Feinschmecker \"Chef of the Year\" (2004)\r\n\"Chef of Chefs\" in Germany (2012, 2015)\r\n\"National Hero\" at CHEF-SACHE (2017)\r\nConsistently ranked among the World's 50 Best Restaurants",
+  "description": "Born in Nürtingen in 1963, Chef Wissler began his culinary journey with an apprenticeship at Hotel Traube Tonbach. He gained his first Michelin star in 1995 at Schloss Reinhartshausen. In 2000, he became the head chef at Restaurant Vendôme, where he earned three Michelin stars by 2004. His cuisine is known for its inventive approach, reviving traditional German dishes with contemporary flair.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6821001e5660b93033e46c17"
+  },
+  "name": "Mathieu Viannay",
+  "specialty": "Lyonnaise cuisine",
+  "imageUrl": "chefs/1746993182141.jpg",
+  "experience": 35,
+  "contact": "33478231720",
+  "awards": "Meilleur Ouvrier de France (2004)\r\n1 Michelin Star for Restaurant Mathieu Viannay (2005)\r\n2 Michelin Stars for La Mère Brazier (2009)",
+  "description": "Born on July 14, 1967, in Versailles, Mathieu Viannay developed a passion for gastronomy early on. After formal training at Ferrandi, he honed his skills in various establishments before establishing his own restaurants. In 2008, he acquired the historic La Mère Brazier in Lyon, reviving its legacy and earning two Michelin stars within a year.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682100775660b93033e46c1a"
+  },
+  "name": "Yusuke Takada",
+  "specialty": "French-Japanese cuisine",
+  "imageUrl": "chefs/1746993271344.jpg",
+  "experience": 25,
+  "contact": "81662222010",
+  "awards": "2 Michelin Stars since 2016\r\nAsia's 50 Best Restaurants – Ranked No. 8 in 2025\r\nAsia's 50 Best Restaurants – Chefs' Choice Award in 2020",
+  "description": "Born on Amami Oshima, a subtropical island in southern Japan, Chef Takada's culinary journey has been marked by a blend of cultural influences. His restaurant, La Cime, meaning \"the peak\" in French, embodies his philosophy of balancing cuisine, guest experience, and space. Signature dishes like the \"Boudin Dog\" showcase his commitment to innovation and excellence.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682100be5660b93033e46c1d"
+  },
+  "name": "Ciccio Sultano",
+  "specialty": "Sicilian haute cuisine",
+  "imageUrl": "chefs/1746993342057.jpg",
+  "experience": 46,
+  "contact": "390932651265",
+  "awards": "Two Michelin Stars for Ristorante Duomo (first star in 2004, second in 2006)\r\nGambero Rosso \"Restaurateur of the Year\" (2020)",
+  "description": "Born in Turin in 1970 to a Sicilian family, Ciccio Sultano began his culinary journey at the age of 13 in a pastry shop in Vittoria, Sicily. He gained international experience in Germany and the United States before returning to Sicily to open Ristorante Duomo in Ragusa in 2000. The restaurant quickly gained acclaim for its innovative approach to Sicilian cuisine, earning two Michelin stars. Chef Sultano is known for his deep respect for Sicilian culinary traditions, which he reinterprets with modern flair.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682101465660b93033e46c26"
+  },
+  "name": "Andreas Senn",
+  "specialty": "Modern Austrian haute cuisine",
+  "imageUrl": "chefs/1746993478177.jpg",
+  "experience": 26,
+  "contact": "436644540232",
+  "awards": "2 Michelin Stars (since 2016)\r\n4 Gault Millau Toques\r\n18.5 points in Gault Millau\r\nGerman Design Award for restaurant design",
+  "description": "Born on January 6, 1980, in Grieskirchen, Austria, Chef Andreas Senn began his culinary journey with an apprenticeship at Wellnesshotel Schalber in Serfaus. He gained valuable experience at Restaurant Ikarus in Salzburg and later at Heimatliebe in Kitzbühel, where he earned his first Gault Millau Toques. In 2015, he opened SENNS.Restaurant in a historic bell foundry in Salzburg's Gusswerk area. The restaurant is known for its open kitchen concept, allowing guests to witness the culinary artistry firsthand. Chef Senn's philosophy emphasizes simplicity, quality ingredients, and creating a multisensory dining experience.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6821019f5660b93033e46c29"
+  },
+  "name": "Carme Ruscalleda",
+  "specialty": "Innovative Catalan cuisine",
+  "imageUrl": "chefs/1746993567050.png",
+  "experience": 36,
+  "contact": "34937600517",
+  "awards": "Seven Michelin stars across her restaurants:\r\nThree for Sant Pau in Sant Pol de Mar\r\nTwo for Sant Pau in Tokyo\r\nTwo for Moments in Barcelona\r\nNational Gastronomy Prize (1998)\r\nCreu de Sant Jordi (2004)\r\nMedal of Honor of the Parliament of Catalonia (2013)\r\nNational Culture Award (2019)\r\nHonorary Doctorate from the University of Barcelona (2023)",
+  "description": "Born in 1952 in Sant Pol de Mar, Spain, Carme Ruscalleda began her culinary journey without formal training, drawing inspiration from her family's farming and trading background. In 1988, she and her husband, Toni Balam, opened Restaurant Sant Pau, which earned its first Michelin star in 1991 and achieved three stars by 2006. She expanded her culinary influence internationally with Sant Pau in Tokyo and Moments in Barcelona, the latter co-managed with her son, Raül Balam. Ruscalleda's cuisine is renowned for its creative narratives, often incorporating literary themes into her menus, and for its commitment to healthful, seasonal ingredients.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682101ef5660b93033e46c2c"
+  },
+  "name": "Julien Royer",
+  "specialty": "Modern French-Asian cuisine",
+  "imageUrl": "chefs/1746993647704.webp",
+  "experience": 24,
+  "contact": "6563850498",
+  "awards": "3 Michelin Stars for Odette (since 2019)\r\nAsia's 50 Best Restaurants: No. 1 in 2019 and 2020; No. 6 in 2023\r\nWorld's 50 Best Restaurants: No. 14 in 2023\r\nEstrella Damm Chefs' Choice Award (2023)\r\nLes Grandes Tables du Monde: Restaurateur of the Year (2022)",
+  "description": "Born in 1982 in Cantal, France, Julien Royer hails from a fourth-generation farming family, instilling in him a deep respect for ingredients. After honing his skills in France, he moved to Singapore in 2008, leading kitchens at Brasserie Les Saveurs and JAAN. In 2015, he opened Odette at the National Gallery Singapore, named in honor of his grandmother. Royer's cuisine at Odette reflects a blend of French techniques and Asian flavors, emphasizing the purity of ingredients. He has since expanded his culinary ventures with Louise in Hong Kong and Claudine in Singapore.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6821023a5660b93033e46c2f"
+  },
+  "name": "Fabio Pisani",
+  "specialty": "Contemporary Italian cuisine",
+  "imageUrl": "chefs/1746993722265.jpg",
+  "experience": 26,
+  "contact": "3902416886",
+  "awards": "2 Michelin Stars for Il Luogo di Aimo e Nadia\r\nBest Chef Award by Identità Golose (2014)\r\nMembership in Relais & Châteaux and Les Grandes Tables du Monde",
+  "description": "Born in 1978 in Molfetta, Bari, Fabio Pisani developed a passion for cooking at the age of 14, inspired by his chef uncle. After graduating from culinary school, he honed his skills in renowned European kitchens before joining Il Luogo di Aimo e Nadia in 2005 alongside Chef Alessandro Negrini. Together, they have revitalized the restaurant's legacy, blending Italy's rich gastronomic traditions with contemporary creativity. Their collaborative approach emphasizes the use of high-quality Italian ingredients, presented in refined and distinctive ways.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682102b15660b93033e46c38"
+  },
+  "name": "Anne-Sophie Pic",
+  "specialty": "Innovative French cuisine",
+  "imageUrl": "chefs/1746993841087.jpg",
+  "experience": 24,
+  "contact": "33475441532",
+  "awards": "10 Michelin stars across her restaurants, making her the most Michelin-starred female chef globally\r\nThree Michelin stars for Maison Pic in Valence\r\nBest Female Chef by The World's 50 Best Restaurants (2011)\r\nChevalier of the Legion of Honour (2011)\r\nOfficier of the Ordre des Arts et des Lettres (2017)",
+  "description": "Born on July 12, 1969, in Valence, France, Anne-Sophie Pic is the daughter of renowned chef Jacques Pic and the granddaughter of André Pic, who first earned three Michelin stars for Maison Pic in 1934. Initially pursuing a career in business, she returned to the family restaurant in 1997. Despite facing challenges in a male-dominated industry, she regained Maison Pic's third Michelin star in 2007. Anne-Sophie is known for her creative approach to French cuisine, incorporating unexpected flavor combinations and elevating humble ingredients. Her culinary empire includes restaurants in Paris, Lausanne, Singapore, and previously London, where La Dame de Pic held two Michelin stars before its closure in 2025. ",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682102fe5660b93033e46c3b"
+  },
+  "name": "Gaston Acurio",
+  "specialty": "Innovative Peruvian cuisine",
+  "imageUrl": "chefs/1746993918676.jpg",
+  "experience": 31,
+  "contact": "18006982536",
+  "awards": "Diners Club Lifetime Achievement Award, The World's 50 Best Restaurants (2018)\r\nGlobal Gastronomy Award, Stockholm (2013)\r\nPrince Claus Award for Collective Memories and Journalism (2009)\r\nEntrepreneur of the Year, América Economía magazine (2005)",
+  "description": "Born in Lima, Peru, in 1967, Gastón Acurio is a chef, writer, entrepreneur, and a leading advocate for Peruvian cuisine. After initially studying law in Madrid, he pursued his passion for cooking at Le Cordon Bleu in Paris. In 1994, he and his wife, Astrid Gutsche, opened their flagship restaurant, Astrid & Gastón, in Lima. Acurio has since established a global presence with over 40 restaurants in more than a dozen countries, including La Mar, Tanta, and Panchita. His efforts have been instrumental in transforming Peru into a renowned culinary destination, celebrating its rich cultural heritage and diverse flavors.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682103435660b93033e46c3e"
+  },
+  "name": "Jiro Ono",
+  "specialty": "Traditional Edomae sushi",
+  "imageUrl": "chefs/1746993987025.jpg",
+  "experience": 83,
+  "contact": "81335353599",
+  "awards": "First sushi chef to receive 3 Michelin stars.\r\nNamed a \"Contemporary Master Craftsman\" by Japan's Ministry of Health, Labour and Welfare in 2005.\r\nSubject of the acclaimed documentary Jiro Dreams of Sushi (2011).",
+  "description": "Born on October 27, 1925, in Tenryū, Shizuoka, Japan, Jiro Ono began his culinary journey at a young age, leaving home at 9 to apprentice at a sushi shop. In 1965, he opened Sukiyabashi Jiro in Tokyo's Ginza district. The restaurant, renowned for its meticulous approach to sushi, seats only ten patrons and offers a tasting menu of approximately 20 courses. Jiro's dedication to his craft has earned him international acclaim, and his story was prominently featured in the documentary Jiro Dreams of Sushi.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682104425660b93033e46c41"
+  },
+  "name": "Christine Hà",
+  "specialty": "Modern Vietnamese-American cuisine",
+  "imageUrl": "chefs/1746994242452.webp",
+  "experience": 37,
+  "contact": "8310401928",
+  "awards": "Winner of MasterChef Season 3 (2012)\r\nNew York Times bestselling cookbook author\r\nJames Beard Award semifinalist (2020, 2022, 2023)",
+  "description": "Christine Hà was born on May 9, 1979, in Los Angeles, California, to Vietnamese immigrant parents. She developed a passion for cooking in college, inspired by her late mother's recipes. At 27, she was diagnosed with NMOSD, leading to gradual vision loss. Despite this challenge, she pursued her culinary dreams and won MasterChef Season 3, becoming the first blind contestant to do so. Since then, she has authored a bestselling cookbook, opened two restaurants in Houston—The Blind Goat and Stuffed Belly—and served as a culinary arts envoy for the U.S. Embassy.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682104985660b93033e46c44"
+  },
+  "name": "Norbet Niederkofler",
+  "specialty": "Seasonal Alpine cuisine",
+  "imageUrl": "chefs/1746994328074.jpg",
+  "experience": 43,
+  "contact": "3125754245",
+  "awards": "3 Michelin Stars and Green Star for sustainability at Atelier Moessmer (2023)\r\n3 Michelin Stars at St. Hubertus, San Cassiano (2017)\r\n5 Toques and 19/20 points in Gault&Millau 2024\r\nNamed in The Best Chef Awards 2024 \"THEBEST24\"",
+  "description": "Born in 1961 in Luttago, South Tyrol, Chef Niederkofler developed his culinary skills under renowned chefs like Eckart Witzigmann and David Bouley. His \"Cook the Mountain\" philosophy emphasizes using local ingredients, minimizing waste, and respecting nature's cycles.",
+  "__v": 0
+}]

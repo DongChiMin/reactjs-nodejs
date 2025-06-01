@@ -1,0 +1,1221 @@
+[{
+  "_id": {
+    "$oid": "68207769020be4deb9d09c13"
+  },
+  "name": "Berry Lemonade",
+  "description": "Refreshing lemonade blended with a mix of ripe berries for a sweet-tart twist",
+  "imageUrl": "/uploads/menus/drinks/f4d07f34-d3fb-4e84-9bb2-8bf0c8a6bff0.jpg",
+  "category": "drink",
+  "price": 3.99,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682077a1020be4deb9d09c16"
+  },
+  "name": "Black Russian",
+  "description": "A bold and smooth cocktail made with vodka and coffee liqueur, served over ice",
+  "imageUrl": "/uploads/menus/drinks/541b5642-58a9-4de3-b059-08a5604d8f42.jpg",
+  "category": "drink",
+  "price": 8,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682077da020be4deb9d09c19"
+  },
+  "name": "Blue Hawaiian",
+  "description": "A tropical blend of rum, blue curaçao, coconut cream, and pineapple juice, served over ice with a vibrant island flair",
+  "imageUrl": "/uploads/menus/drinks/a82b86d3-1cba-4d11-be03-1ee5b65e066c.jpg",
+  "category": "drink",
+  "price": 9,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68207808020be4deb9d09c1c"
+  },
+  "name": "Brandy Alexander",
+  "description": "A rich and creamy classic cocktail made with brandy, dark crème de cacao, and fresh cream—smooth and indulgent",
+  "imageUrl": "/uploads/menus/drinks/0d4dbc56-3ce7-4565-886f-a5fb6e39d2aa.jpg",
+  "category": "drink",
+  "price": 9.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820782b020be4deb9d09c1f"
+  },
+  "name": "Citrus Sparkler",
+  "description": "A zesty and refreshing mix of citrus juices topped with sparkling water for a bright, bubbly finish",
+  "imageUrl": "/uploads/menus/drinks/528ea373-5c8c-42cd-9131-4611a986ae8f.jpg",
+  "category": "drink",
+  "price": 4.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820787b020be4deb9d09c22"
+  },
+  "name": "Dracontomelon Juice",
+  "description": "A uniquely tangy and slightly sweet juice made from tropical dracontomelon fruit, offering a refreshing burst of exotic flavor",
+  "imageUrl": "/uploads/menus/drinks/4f88c560-608e-45f9-900b-3d33805c1854.webp",
+  "category": "drink",
+  "price": 5.25,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682078b3020be4deb9d09c25"
+  },
+  "name": "Fuzzy Navel",
+  "description": "A sweet and fruity cocktail made with peach schnapps and orange juice—light, refreshing, and easy to enjoy",
+  "imageUrl": "/uploads/menus/drinks/9b533848-cd74-4de6-99e3-1598d1a27163.jpg",
+  "category": "drink",
+  "price": 7.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682078d2020be4deb9d09c28"
+  },
+  "name": "Tequila Sunrise",
+  "description": "A vibrant and fruity cocktail made with tequila, orange juice, and grenadine, layered to resemble a beautiful sunris",
+  "imageUrl": "/uploads/menus/drinks/3b9ef3ef-07c9-4be8-aaa6-03a01fccc32f.jpg",
+  "category": "drink",
+  "price": 8.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682078fc020be4deb9d09c2b"
+  },
+  "name": "Tom Collins",
+  "description": "A classic cocktail made with gin, fresh lemon juice, simple syrup, and soda water, served over ice for a crisp, refreshing drink",
+  "imageUrl": "/uploads/menus/drinks/f44ab944-9f5a-4004-a3c7-2eecc897bd29.png",
+  "category": "drink",
+  "price": 8,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68207cad020be4deb9d09c34"
+  },
+  "name": "French Martini",
+  "description": "A sophisticated and fruity cocktail made with vodka, Chambord raspberry liqueur, and pineapple juice, shaken to perfection for a smooth, sweet finish",
+  "imageUrl": "/uploads/menus/drinks/1632b814-7c6c-4638-9ab5-279e66eebd02.jpg",
+  "category": "drink",
+  "price": 9,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68207d03020be4deb9d09c4d"
+  },
+  "name": "Kamikaze",
+  "description": "A bold and tangy cocktail made with vodka, lime juice, and triple sec, delivering a sharp, clean taste with a punch",
+  "imageUrl": "/uploads/menus/drinks/8c757e42-ef17-4303-a0fa-99df62376810.jpg",
+  "category": "drink",
+  "price": 7,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68207d84020be4deb9d09c50"
+  },
+  "name": "Russian Standard Vodka",
+  "description": "A premium vodka from Russia, distilled with the finest ingredients for a smooth, crisp flavor. Ideal for sipping or mixing in cocktails",
+  "imageUrl": "/uploads/menus/drinks/a0f53e05-9d3c-428c-a4e1-1e12a8f61c90.webp",
+  "category": "drink",
+  "price": 29.99,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68207da6020be4deb9d09c53"
+  },
+  "name": "Kombucha",
+  "description": "A refreshing, fermented tea with a tangy taste and natural effervescence, packed with probiotics and antioxidants. Available in a variety of flavors",
+  "imageUrl": "/uploads/menus/drinks/df16253f-06a7-4616-9185-be6cb0dae3aa.jpg",
+  "category": "drink",
+  "price": 4.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68207dcc020be4deb9d09c56"
+  },
+  "name": "Rusty Nail",
+  "description": "A smooth and warming cocktail made with Scotch whisky and Drambuie, delivering a rich blend of honey, herbs, and malted flavor",
+  "imageUrl": "/uploads/menus/drinks/43200351-aee7-49c8-9732-f7b8524527a2.webp",
+  "category": "drink",
+  "price": 9.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68207dee020be4deb9d09c59"
+  },
+  "name": "Sazerac",
+  "description": "A timeless New Orleans classic made with rye whiskey, Peychaud’s bitters, a touch of absinthe, and a sugar cube, stirred to create a bold and aromatic drink",
+  "imageUrl": "/uploads/menus/drinks/49b85caf-44d9-4a88-ba2f-3891795b2508.jpg",
+  "category": "drink",
+  "price": 10,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68207e07020be4deb9d09c5c"
+  },
+  "name": "Cosmopolitan",
+  "description": "A stylish and tart cocktail made with vodka, triple sec, cranberry juice, and fresh lime juice, shaken to perfection and served with a lime twist",
+  "imageUrl": "/uploads/menus/drinks/c11c35e7-35ba-4c3b-95f9-838b1f6dfdba.jpg",
+  "category": "drink",
+  "price": 9,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68207e35020be4deb9d09c5f"
+  },
+  "name": "Jalapeño Margarita",
+  "description": "A spicy twist on the classic, made with tequila, fresh lime juice, triple sec, and muddled jalapeño for a bold kick, balanced by a hint of sweetness",
+  "imageUrl": "/uploads/menus/drinks/c96e7636-db80-48d1-ad49-72561d330ed8.jpg",
+  "category": "drink",
+  "price": 10,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68207e4b020be4deb9d09c62"
+  },
+  "name": "Sidecar",
+  "description": "A classic cocktail made with cognac, orange liqueur, and fresh lemon juice, shaken and served in a sugar-rimmed glass for a tart and smooth finish",
+  "imageUrl": "/uploads/menus/drinks/b3291fa5-4721-4852-af4e-4634530a3069.jpg",
+  "category": "drink",
+  "price": 9.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68207e6a020be4deb9d09c65"
+  },
+  "name": "Whiskey Sour",
+  "description": "A smooth and refreshing cocktail made with bourbon, fresh lemon juice, and simple syrup, shaken to perfection and served over ice with a cherry or lemon twist",
+  "imageUrl": "/uploads/menus/drinks/fa6a3664-5366-47c0-8b65-d5bf18b9a113.jpg",
+  "category": "drink",
+  "price": 8,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68207e90020be4deb9d09c68"
+  },
+  "name": "Piña colada",
+  "description": "A tropical favorite made with rum, coconut cream, and pineapple juice, blended to creamy perfection and served with a cherry and pineapple slice",
+  "imageUrl": "/uploads/menus/drinks/3707f579-e18b-4afc-8fa0-5101770935dd.webp",
+  "category": "drink",
+  "price": 9,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68207eba020be4deb9d09c6e"
+  },
+  "name": "Long Island Iced Tea",
+  "description": "A bold and refreshing mix of vodka, rum, tequila, gin, triple sec, sour mix, and a splash of cola, creating a flavorful, well-balanced cocktail",
+  "imageUrl": "/uploads/menus/drinks/091441d5-dd3d-4516-8131-e3c023ccf1e6.png",
+  "category": "drink",
+  "price": 10.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68207ed6020be4deb9d09c71"
+  },
+  "name": "Bloody Mary",
+  "description": "A savory cocktail made with vodka, tomato juice, and a blend of spices, garnished with celery, olives, and a wedge of lime for the perfect brunch companion",
+  "imageUrl": "/uploads/menus/drinks/24e8c62c-ae7a-4cbb-981c-503bc07ab0f2.jpg",
+  "category": "drink",
+  "price": 8.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68207ef9020be4deb9d09c74"
+  },
+  "name": "Mojito",
+  "description": "A refreshing and crisp cocktail made with rum, fresh mint, lime juice, sugar, and soda water, muddled together and served over ice",
+  "imageUrl": "/uploads/menus/drinks/ced6426b-8161-4bc7-99dd-17f143ec108b.png",
+  "category": "drink",
+  "price": 8,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68207f1f020be4deb9d09c77"
+  },
+  "name": "Espresso",
+  "description": "A rich and bold shot of finely brewed coffee, offering a deep, intense flavor with a smooth crema on top",
+  "imageUrl": "/uploads/menus/drinks/39648558-5ef1-4da0-b406-e7d1343bf58e.jpg",
+  "category": "drink",
+  "price": 3,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68207f33020be4deb9d09c7a"
+  },
+  "name": "Cappuccino",
+  "description": "A classic Italian coffee made with equal parts espresso, steamed milk, and frothed milk, topped with a dusting of cocoa or cinnamon for a smooth, rich flavor",
+  "imageUrl": "/uploads/menus/drinks/b6607bad-fefd-4779-baf2-de995d37338d.jpg",
+  "category": "drink",
+  "price": 4.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "68207f48020be4deb9d09c7d"
+  },
+  "name": "Chai Latte",
+  "description": "A warm and comforting drink made with spiced chai tea concentrate and steamed milk, creating a perfect balance of sweet and aromatic flavors",
+  "imageUrl": "/uploads/menus/drinks/8960b572-aa13-46e2-bab9-9c51fdc58935.jpg",
+  "category": "drink",
+  "price": 5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820cadc020be4deb9d09cd2"
+  },
+  "name": "Braised Chicken Legs With Grapes and Fennel",
+  "description": "Succulent chicken legs slowly braised with sweet grapes, aromatic fennel, white wine, and herbs, creating a savory-sweet harmony of flavors",
+  "imageUrl": "/uploads/menus/main-courses/160ab10e-e5d5-4737-9ba4-f07e885e9df6.webp",
+  "category": "mainCourse",
+  "price": 18.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820cb00020be4deb9d09cd5"
+  },
+  "name": "Tamales con Elote y Chile Poblano",
+  "description": "Traditional masa tamales filled with sweet corn and roasted poblano peppers, steamed in corn husks and served with a side of salsa verde",
+  "imageUrl": "/uploads/menus/main-courses/f40aba43-81c3-49a3-8415-f4ce17f2f187.webp",
+  "category": "mainCourse",
+  "price": 16,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820cb40020be4deb9d09cd8"
+  },
+  "name": "Baatingan w Kusaa Bil Banadoura",
+  "description": "Delicately hollowed eggplants and zucchini stuffed with a savory blend of rice, herbs, and spices, slowly simmered in a rich, garlicky tomato sauce—a comforting Middle Eastern classic",
+  "imageUrl": "/uploads/menus/main-courses/ca92a951-0150-4546-ac50-7e91bec27e76.webp",
+  "category": "mainCourse",
+  "price": 17,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820cb5c020be4deb9d09cdb"
+  },
+  "name": "Seared Scallops With Brown Butter And Lemon Pan Sauce",
+  "description": "Perfectly seared sea scallops served with a nutty brown butter and bright lemon pan sauce, finished with fresh herbs for a refined, elegant flavor",
+  "imageUrl": "/uploads/menus/main-courses/19cd8025-5347-4eba-8a38-ade0ee063d8e.webp",
+  "category": "mainCourse",
+  "price": 24,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820cb71020be4deb9d09cde"
+  },
+  "name": "Seared Scallops With Basil Risotto",
+  "description": "Golden-seared sea scallops served atop a creamy basil-infused risotto, finished with a drizzle of lemon oil and shaved Parmesan for a balanced, aromatic dish",
+  "imageUrl": "/uploads/menus/main-courses/9405ecd8-8368-4976-be98-c8a8ae769eb9.webp",
+  "category": "mainCourse",
+  "price": 25,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820cb90020be4deb9d09ce1"
+  },
+  "name": "Pozole Verde Con Hongos",
+  "description": "A vibrant and hearty Mexican stew made with hominy and tender mushrooms in a rich green broth of tomatillos, poblano peppers, and fresh herbs—comforting, flavorful, and fully plant-based",
+  "imageUrl": "/uploads/menus/main-courses/a4e50c8d-45b1-423a-a89d-0f1e49a2552b.webp",
+  "category": "mainCourse",
+  "price": 16.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820cba8020be4deb9d09ce4"
+  },
+  "name": "Potato Flake Gnocchi",
+  "description": "Soft, pillowy gnocchi made from rehydrated potato flakes, gently boiled and sautéed with brown butter, sage, and Parmesan for a simple yet satisfying dish",
+  "imageUrl": "/uploads/menus/main-courses/358fa37a-dcf2-499e-9f50-fe1c28a2296b.webp",
+  "category": "mainCourse",
+  "price": 17.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820cbc8020be4deb9d09ce7"
+  },
+  "name": "Mast Biryani",
+  "description": "A festive and aromatic layered rice dish made with long-grain basmati rice, seasonal vegetables, fragrant spices, saffron, and herbs—slow-cooked to perfection and served with raita",
+  "imageUrl": "/uploads/menus/main-courses/2bce2caa-7112-4cb8-9ba9-5b5116cba95a.webp",
+  "category": "mainCourse",
+  "price": 18,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820cbe1020be4deb9d09cea"
+  },
+  "name": "Instant Pot Lamb Haleem",
+  "description": "A rich, slow-cooked stew of tender lamb, lentils, and cracked wheat, infused with warm spices and finished with ghee—made in the Instant Pot for deep flavor and velvety texture in less time",
+  "imageUrl": "/uploads/menus/main-courses/940ee760-5190-49b3-b077-a288a0ff71d4.webp",
+  "category": "mainCourse",
+  "price": 19,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820cbf9020be4deb9d09ced"
+  },
+  "name": "Habanero BBQ Shrimp",
+  "description": "Juicy shrimp sautéed in a bold, smoky barbecue sauce with a fiery habanero kick—sweet, spicy, and irresistibly flavorful",
+  "imageUrl": "/uploads/menus/main-courses/ae6e8e61-7a9b-49ad-919b-c4ee1970dc22.webp",
+  "category": "mainCourse",
+  "price": 21,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820cc0d020be4deb9d09cf0"
+  },
+  "name": "Grilled Pork Spareribs With Soda Bottle Barbecue Sauce",
+  "description": "Tender, fall-off-the-bone pork spareribs, grilled to perfection and smothered in a tangy, sweet soda bottle barbecue sauce for a uniquely flavorful twist",
+  "imageUrl": "/uploads/menus/main-courses/c4f043e2-a7c0-4260-9d68-d9cb24a44fbe.webp",
+  "category": "mainCourse",
+  "price": 22,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820cc21020be4deb9d09cf3"
+  },
+  "name": "Grilled Jerk Tofu and Plantains With Mango Salsa",
+  "description": "Spicy, smoky jerk-marinated tofu grilled to perfection and paired with sweet caramelized plantains, topped with a fresh and tangy mango salsa for a vibrant and satisfying dish",
+  "imageUrl": "/uploads/menus/main-courses/2d4bf797-3904-4b53-8c4f-8e5ba4b94452.webp",
+  "category": "mainCourse",
+  "price": 18,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820cc5d020be4deb9d09cf6"
+  },
+  "name": "Grilled Coconut Shrimp With Shishito Peppers",
+  "description": "Succulent shrimp coated in a crispy coconut crust, grilled to perfection and served alongside blistered shishito peppers for a sweet, savory, and slightly smoky combination",
+  "imageUrl": "/uploads/menus/main-courses/f6599592-4695-4fef-b52f-e670be45c0e2.webp",
+  "category": "mainCourse",
+  "price": 20,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820cc76020be4deb9d09cf9"
+  },
+  "name": "Gado Gado",
+  "description": "A traditional Indonesian salad made with a variety of fresh, crunchy vegetables, boiled eggs, tofu, and tempeh, all drizzled with a rich, tangy peanut sauce for a satisfying, flavorful meal",
+  "imageUrl": "/uploads/menus/main-courses/703e667d-b65c-4bc0-aba9-f5499600ae20.webp",
+  "category": "mainCourse",
+  "price": 16,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820cc8b020be4deb9d09cfc"
+  },
+  "name": "Fish Tacos al Pastor",
+  "description": "Grilled white fish marinated in a smoky adobo sauce, served in soft corn tortillas with pineapple, cilantro, and a tangy salsa verde for a fresh, bold, and flavorful twist on the classic taco",
+  "imageUrl": "/uploads/menus/main-courses/7b5a001b-018d-47f0-9d3b-1cefc1e49a8e.webp",
+  "category": "mainCourse",
+  "price": 18,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820ccae020be4deb9d09cff"
+  },
+  "name": "Double-Stack Mushroom and Chicken Cheeseburger",
+  "description": "Two juicy grilled chicken patties topped with sautéed mushrooms, melted cheese, lettuce, tomato, and a smoky aioli, served on a toasted brioche bun for a savory, indulgent bite",
+  "imageUrl": "/uploads/menus/main-courses/0920997a-c9cf-41c7-baa2-e3115a55c362.webp",
+  "category": "mainCourse",
+  "price": 17.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820ccc5020be4deb9d09d02"
+  },
+  "name": "Classic Sole Meunière",
+  "description": "A delicate, pan-fried sole fillet, seasoned with lemon and parsley, and finished with a rich brown butter sauce for a light yet flavorful classic French dish",
+  "imageUrl": "/uploads/menus/main-courses/b3609bb9-9b70-43c8-8419-d2b5bbaa2167.webp",
+  "category": "mainCourse",
+  "price": 26,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820ccd7020be4deb9d09d05"
+  },
+  "name": "Clam Toasts with Pancetta",
+  "description": "Toasted baguette slices topped with a savory blend of fresh clams, crispy pancetta, garlic, and herbs, finished with a drizzle of olive oil and a touch of lemon zest for a perfect balance of flavors",
+  "imageUrl": "/uploads/menus/main-courses/136cf80d-20d5-4d85-9894-79c1048325fc.webp",
+  "category": "mainCourse",
+  "price": 14,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820cce9020be4deb9d09d08"
+  },
+  "name": "Circus Cured-Salmon",
+  "description": "Delicately cured salmon with a unique blend of spices and citrus, served with a tangy mustard-dill sauce and garnished with pickled vegetables for a bold, savory starter",
+  "imageUrl": "/uploads/menus/main-courses/8095eca9-9c12-4fc6-92d5-9f0093e10d9a.jpg",
+  "category": "mainCourse",
+  "price": 16,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820ccfa020be4deb9d09d0b"
+  },
+  "name": "Cedar-Plank Salmon",
+  "description": "Fresh, perfectly grilled salmon fillet cooked on a cedar plank, infusing it with a smoky aroma and complemented by a tangy glaze of honey and mustard, served with roasted vegetables and a lemon wedge",
+  "imageUrl": "/uploads/menus/main-courses/4f2aff1f-cd49-4ace-8184-aafb678b22d7.webp",
+  "category": "mainCourse",
+  "price": 24,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820cd11020be4deb9d09d0e"
+  },
+  "name": "Cauliflower Bolognese",
+  "description": "A hearty, plant-based twist on the classic Bolognese, featuring finely chopped cauliflower simmered in a rich tomato sauce with herbs, garlic, and red wine, served over pasta or zucchini noodles for a satisfying, flavorful dish",
+  "imageUrl": "/uploads/menus/main-courses/b3f99443-00da-4662-8bf5-0c3db215d8f6.webp",
+  "category": "mainCourse",
+  "price": 17,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820cd24020be4deb9d09d11"
+  },
+  "name": "Broken Lasagna With Parmesan and All Peas",
+  "description": "A rustic twist on traditional lasagna, featuring torn lasagna sheets layered with a creamy blend of ricotta, Parmesan, and sweet peas, baked to perfection for a comforting, savory dish",
+  "imageUrl": "/uploads/menus/main-courses/ca54667d-d21f-40ed-84df-af8ad5979d54.webp",
+  "category": "mainCourse",
+  "price": 18,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820cdf0020be4deb9d09d1e"
+  },
+  "name": "Chicken Escabèche",
+  "description": "A flavorful and tangy dish featuring tender chicken marinated in a vinegar-based sauce with onions, garlic, carrots, and spices, served chilled or at room temperature for a perfect balance of sour, savory, and aromatic flavors",
+  "imageUrl": "/uploads/menus/main-courses/b093f886-ddad-42fe-9021-4d5d15c64739.webp",
+  "category": "mainCourse",
+  "price": 19,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820ce04020be4deb9d09d21"
+  },
+  "name": "Beer-Steamed Mussels With Chorizo",
+  "description": "Fresh mussels steamed in a rich and savory beer broth, complemented by spicy chorizo, garlic, and fresh herbs, served with crusty bread for dipping",
+  "imageUrl": "/uploads/menus/main-courses/c4fb1ad1-fea6-430a-aa06-17040f17db70.webp",
+  "category": "mainCourse",
+  "price": 22,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820ce22020be4deb9d09d24"
+  },
+  "name": "Coq au Vin With Cocoa Powder",
+  "description": "A rich and hearty French dish featuring chicken braised in red wine, bacon, mushrooms, onions, and a hint of cocoa powder, creating a deep, complex flavor profile with earthy and savory notes",
+  "imageUrl": "/uploads/menus/main-courses/01f8da4a-172c-4f65-8fc9-1a8d6f1dc571.webp",
+  "category": "mainCourse",
+  "price": 26,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820ce35020be4deb9d09d27"
+  },
+  "name": "Pork Tenderloin with Golden Beets",
+  "description": "Tender, perfectly roasted pork tenderloin paired with sweet, earthy golden beets, finished with a balsamic glaze for a dish that balances savory, sweet, and slightly tangy flavors",
+  "imageUrl": "/uploads/menus/main-courses/539e44dd-1c07-4fc3-a2b1-674f4a0ed42a.webp",
+  "category": "mainCourse",
+  "price": 24,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d162020be4deb9d09d2a"
+  },
+  "name": "Aborrajados",
+  "description": "A Colombian appetizer featuring ripe plantains stuffed with cheese and fried to golden perfection, offering a sweet and savory flavor combination that's crispy on the outside and meltingly soft on the inside",
+  "imageUrl": "/uploads/menus/appetizers/557b7dcd-f7fc-4e08-b88f-1ad7d1678b8d.jpg",
+  "category": "appetizer",
+  "price": 8.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d182020be4deb9d09d2d"
+  },
+  "name": "Antojitos",
+  "description": "A delightful selection of Mexican street food-inspired appetizers, including mini quesadillas, crispy taquitos, elote (Mexican street corn), and spicy salsas, perfect for sharing and bursting with bold flavors",
+  "imageUrl": "/uploads/menus/appetizers/dca8387a-8bb6-45ab-b04a-fea851c07472.jpg",
+  "category": "appetizer",
+  "price": 10,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d194020be4deb9d09d30"
+  },
+  "name": "Beyaynetu",
+  "description": "A traditional Ethiopian vegetarian platter featuring a variety of flavorful dishes, such as lentils, stewed vegetables, and sautéed greens, served with injera, a spongy flatbread, for a hearty, plant-based meal",
+  "imageUrl": "/uploads/menus/appetizers/0d6bdbcc-bf78-44a3-8f87-9b2cc00388a9.jpg",
+  "category": "appetizer",
+  "price": 14,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d1a6020be4deb9d09d33"
+  },
+  "name": "Bò lá lốt",
+  "description": "A popular Vietnamese appetizer featuring seasoned ground beef wrapped in betel leaves, grilled to perfection, and served with vermicelli noodles, fresh herbs, and a savory dipping sauce for a bold, aromatic flavor",
+  "imageUrl": "/uploads/menus/appetizers/422eb7fb-0625-489d-b93c-45b934219b7d.jpg",
+  "category": "appetizer",
+  "price": 12,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d1b7020be4deb9d09d36"
+  },
+  "name": "Bruschetta Trio",
+  "description": "A delightful assortment of three classic Italian bruschetta: ripe tomatoes with basil and balsamic, roasted red peppers with garlic and olive tapenade, and creamy ricotta with honey and toasted walnuts, all served on freshly toasted baguette slices",
+  "imageUrl": "/uploads/menus/appetizers/0afb5378-c6bb-4d0d-bb5d-72af127bb3f8.webp",
+  "category": "appetizer",
+  "price": 9.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d1c6020be4deb9d09d39"
+  },
+  "name": "Caesar Salad",
+  "description": "A crisp and refreshing salad featuring fresh romaine lettuce, crunchy croutons, shaved Parmesan, and tossed in a creamy Caesar dressing with a hint of garlic and anchovy for extra depth",
+  "imageUrl": "/uploads/menus/appetizers/b50ca6eb-75ca-4440-8ab7-20193f15fe2b.jpg",
+  "category": "appetizer",
+  "price": 8,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d1e2020be4deb9d09d3c"
+  },
+  "name": "Cantık Pidesi",
+  "description": "A traditional Turkish flatbread, lightly crisped and topped with a savory mixture of minced meat, onions, and spices, baked to perfection for a deliciously satisfying dish",
+  "imageUrl": "/uploads/menus/appetizers/06f0a879-8e3a-4ed9-8ac1-3522ba6130cd.webp",
+  "category": "appetizer",
+  "price": 11,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d1f7020be4deb9d09d3f"
+  },
+  "name": "Caprese Salad",
+  "description": "A refreshing Italian classic made with ripe tomatoes, fresh mozzarella, basil, and a drizzle of extra virgin olive oil, finished with a sprinkle of sea salt and balsamic glaze for a simple yet flavorful bite",
+  "imageUrl": "/uploads/menus/appetizers/a56f735d-3f34-4cdc-ba73-bd2ad30aff01.jpg",
+  "category": "appetizer",
+  "price": 9,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d215020be4deb9d09d42"
+  },
+  "name": "Ceviche",
+  "description": "A fresh and zesty dish featuring seafood (typically shrimp or white fish) marinated in citrus juice with onions, cilantro, and a touch of chili for a refreshing, tangy flavor. Served with crispy tortilla chips or on a bed of lettuce for a light, flavorful appetizer",
+  "imageUrl": "/uploads/menus/appetizers/fa3a1b12-71af-4a70-a4d0-6deb479efe52.jpg",
+  "category": "appetizer",
+  "price": 12,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d225020be4deb9d09d45"
+  },
+  "name": "Chả giò",
+  "description": "Vietnamese crispy spring rolls filled with a savory mixture of ground pork, shrimp, mushrooms, and vermicelli noodles, all wrapped in rice paper and deep-fried to a golden crisp. Served with a tangy dipping sauce",
+  "imageUrl": "/uploads/menus/appetizers/735562bb-f375-425c-beba-df7ba69e44b5.jpg",
+  "category": "appetizer",
+  "price": 8.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d235020be4deb9d09d48"
+  },
+  "name": "Conchitas a la parmesana",
+  "description": "A delicious Peruvian appetizer featuring tender scallops baked in their shells, topped with Parmesan cheese, breadcrumbs, and a hint of garlic, then broiled to golden perfection",
+  "imageUrl": "/uploads/menus/appetizers/fb521d82-f24a-4bee-bc38-abaea4078f26.webp",
+  "category": "appetizer",
+  "price": 14,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d248020be4deb9d09d4b"
+  },
+  "name": "Fried Calamari",
+  "description": "Crispy, golden-fried calamari served with a side of tangy marinara sauce and a zesty lemon wedge for a perfect balance of flavors and textures",
+  "imageUrl": "/uploads/menus/appetizers/3c50a307-77ee-4b0f-baf1-31293a6a9296.webp",
+  "category": "appetizer",
+  "price": 9.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d25a020be4deb9d09d4e"
+  },
+  "name": "Fritto Misto",
+  "description": "A delightful Italian seafood and vegetable platter featuring a mix of shrimp, calamari, and seasonal vegetables, all lightly battered and fried to crispy perfection, served with a side of marinara sauce and lemon wedges for a flavorful bite",
+  "imageUrl": "/uploads/menus/appetizers/19ce699a-60ad-43f5-81f5-a3327ecc605f.jpg",
+  "category": "appetizer",
+  "price": 12.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d270020be4deb9d09d51"
+  },
+  "name": "Gambas al Ajillo",
+  "description": "A classic Spanish dish featuring succulent shrimp sautéed in olive oil with garlic, red pepper flakes, and a touch of parsley, served sizzling and accompanied by warm bread to soak up the flavorful sauce",
+  "imageUrl": "/uploads/menus/appetizers/9ddb52cf-2bb7-479f-974d-7807644d8cb9.jpg",
+  "category": "appetizer",
+  "price": 14,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d27f020be4deb9d09d54"
+  },
+  "name": "Gamjajeon",
+  "description": "A traditional Korean dish featuring crispy, savory potato pancakes made with grated potatoes, onions, and a simple batter, pan-fried until golden brown and served with a soy-based dipping sauce for a flavorful and satisfying appetizer",
+  "imageUrl": "/uploads/menus/appetizers/6ecaace5-a512-4cfb-8cb3-5811922c701a.jpg",
+  "category": "appetizer",
+  "price": 9,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d28e020be4deb9d09d57"
+  },
+  "name": "Guotie",
+  "description": "A popular Chinese dish featuring pan-fried dumplings filled with ground pork and vegetables, perfectly crispy on the bottom and tender on top, served with a savory soy-based dipping sauce",
+  "imageUrl": "/uploads/menus/appetizers/862d3dad-5db3-4c3e-a20a-1e2b645ee380.jpg",
+  "category": "appetizer",
+  "price": 8,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d29d020be4deb9d09d5a"
+  },
+  "name": "Hummus",
+  "description": "A smooth and creamy Middle Eastern dip made from blended chickpeas, tahini, garlic, and lemon juice, served with warm pita bread or crunchy vegetables for dipping",
+  "imageUrl": "/uploads/menus/appetizers/00c93a0a-bced-4d66-8758-603130dbb5a2.jpg",
+  "category": "appetizer",
+  "price": 7,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d2ae020be4deb9d09d5d"
+  },
+  "name": "Kokoreç",
+  "description": "A traditional Turkish street food made from lamb intestines, marinated with herbs and spices, grilled to perfection, and served in a warm, soft pita with a sprinkle of chili flakes for an aromatic, savory experience",
+  "imageUrl": "/uploads/menus/appetizers/0fc1b3ff-573c-4ec9-ae36-c0f25a9b30dc.jpg",
+  "category": "appetizer",
+  "price": 12,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d2c0020be4deb9d09d60"
+  },
+  "name": "Maakouda",
+  "description": "A Moroccan dish of crispy, golden-brown potato cakes seasoned with garlic, cumin, and coriander, often served as a snack or appetizer with a side of spicy harissa or tangy yogurt for dipping",
+  "imageUrl": "/uploads/menus/appetizers/0a101f6f-b879-414e-92fa-dc85dc8b9470.jpg",
+  "category": "appetizer",
+  "price": 8.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d2d1020be4deb9d09d63"
+  },
+  "name": "Machas a la Parmesana",
+  "description": "A delicious Chilean dish featuring tender razor clams topped with Parmesan cheese and breadcrumbs, then baked until golden and bubbling, offering a savory and slightly smoky flavor with every bite",
+  "imageUrl": "/uploads/menus/appetizers/dcc17698-8c0a-4251-ab82-d96576a0751a.jpg",
+  "category": "appetizer",
+  "price": 14,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d2e1020be4deb9d09d66"
+  },
+  "name": "Mutabal",
+  "description": "A smoky and creamy Middle Eastern dip made from roasted eggplant, tahini, garlic, lemon juice, and olive oil, served with warm pita or fresh vegetables for dipping",
+  "imageUrl": "/uploads/menus/appetizers/b4a3db61-4044-4d44-8ba6-9245953a915d.jpg",
+  "category": "appetizer",
+  "price": 7.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d2fc020be4deb9d09d69"
+  },
+  "name": "Pastrami Roll",
+  "description": "A savory roll filled with tender, thinly sliced pastrami, complemented by melted Swiss cheese and tangy mustard, all wrapped in a soft, warm roll for a satisfying and flavorful bite",
+  "imageUrl": "/uploads/menus/appetizers/bb7e7947-325d-4ec9-a081-bfb323053b28.jpg",
+  "category": "appetizer",
+  "price": 10,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d30d020be4deb9d09d6c"
+  },
+  "name": "Poke",
+  "description": "A Hawaiian-inspired dish featuring fresh, sushi-grade tuna or salmon, marinated in soy sauce, sesame oil, and seasonings, served over rice with toppings like avocado, cucumber, seaweed, and a drizzle of spicy mayo for a refreshing, flavorful bowl",
+  "imageUrl": "/uploads/menus/appetizers/be784d30-6a4b-467d-8080-af1e7447d036.jpg",
+  "category": "appetizer",
+  "price": 16,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d31c020be4deb9d09d6f"
+  },
+  "name": "Spicy Tuna Tartare",
+  "description": "Fresh, sushi-grade tuna diced and mixed with a spicy mayo, sesame oil, and a hint of soy sauce, served with avocado and crispy wonton chips for a bold, refreshing appetizer",
+  "imageUrl": "/uploads/menus/appetizers/737c68ad-67df-4cd6-982f-a7df51ca0c2f.webp",
+  "category": "appetizer",
+  "price": 18,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d32f020be4deb9d09d72"
+  },
+  "name": "Svrljiški belmuž",
+  "description": "A traditional Serbian dish made from creamy, freshly made cornmeal porridge, combined with rich, soft cheese and served with smoked meat or sausage for a comforting, rustic meal full of authentic flavors",
+  "imageUrl": "/uploads/menus/appetizers/82740490-4d8e-45b7-a505-eb4e04b5ae74.jpg",
+  "category": "appetizer",
+  "price": 12,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d33e020be4deb9d09d75"
+  },
+  "name": "Tang cu pai gu",
+  "description": "A popular Chinese dish featuring tender, braised pork ribs cooked in a sweet and sour sauce made from soy sauce, sugar, vinegar, and spices, creating a perfect balance of flavors with a rich, sticky glaze",
+  "imageUrl": "/uploads/menus/appetizers/5171da1e-3276-4343-aef5-e6a9dd9691d1.jpg",
+  "category": "appetizer",
+  "price": 14,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d34e020be4deb9d09d78"
+  },
+  "name": "Tzatziki",
+  "description": "A refreshing Greek dip made with creamy yogurt, cucumber, garlic, dill, and a touch of lemon, perfect for pairing with pita bread, fresh vegetables, or grilled meats",
+  "imageUrl": "/uploads/menus/appetizers/2959750f-fa10-4f87-9528-ad9e31d2035e.jpg",
+  "category": "appetizer",
+  "price": 6.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d361020be4deb9d09d7b"
+  },
+  "name": "Yukhoe",
+  "description": "A traditional Korean dish featuring thinly sliced raw beef, marinated in a sweet and savory mixture of soy sauce, sesame oil, garlic, and sugar, topped with a raw egg yolk and garnished with julienned pear and sesame seeds for a delicate, flavorful experience",
+  "imageUrl": "/uploads/menus/appetizers/33dde649-5b0a-478c-93fa-364bff5ccfb4.jpg",
+  "category": "appetizer",
+  "price": 18,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d924020be4deb9d09e23"
+  },
+  "name": "Apple Pie",
+  "description": "A classic dessert featuring a buttery, flaky crust filled with tender, spiced apples and baked to golden perfection. Served warm, optionally with a scoop of vanilla ice cream for a comforting finish",
+  "imageUrl": "/uploads/menus/desserts/32337a58-09de-4be6-8756-3fbe679c4a77.jpg",
+  "category": "dessert",
+  "price": 7,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d936020be4deb9d09e26"
+  },
+  "name": "Bananas Foste",
+  "description": "A decadent dessert of caramelized bananas flambéed in a rich sauce of brown sugar, butter, cinnamon, dark rum, and banana liqueur, served warm over vanilla ice cream",
+  "imageUrl": "/uploads/menus/desserts/e827013e-81ff-4e92-ac1a-50792f9367d2.jpg",
+  "category": "dessert",
+  "price": 9,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d944020be4deb9d09e29"
+  },
+  "name": "Brownies",
+  "description": "Rich, fudgy chocolate brownies with a crisp top and gooey center, made with premium cocoa and dark chocolate. Served warm and optionally topped with a scoop of ice cream or a drizzle of chocolate sauce",
+  "imageUrl": "/uploads/menus/desserts/b04d7d83-a2f5-4c66-a92a-14d993021149.jpg",
+  "category": "dessert",
+  "price": 6,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d958020be4deb9d09e2c"
+  },
+  "name": "Cheesecake",
+  "description": "A creamy, velvety-smooth classic cheesecake on a buttery graham cracker crust, served plain or topped with your choice of fresh berries, chocolate sauce, or fruit compote",
+  "imageUrl": "/uploads/menus/desserts/2c156ff8-3018-410d-985d-2b1392740190.jpg",
+  "category": "dessert",
+  "price": 7.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d980020be4deb9d09e2f"
+  },
+  "name": "Chocolate Ice Cream",
+  "description": "A rich and creamy scoop of classic chocolate ice cream made with premium cocoa for a smooth, indulgent treat. Perfect on its own or paired with your favorite dessert",
+  "imageUrl": "/uploads/menus/desserts/a86c3f0a-8bea-4e76-a215-7cc227e33763.jpg",
+  "category": "dessert",
+  "price": 4.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d992020be4deb9d09e32"
+  },
+  "name": "Creole Cream Cake",
+  "description": "A moist and fluffy Southern-style cake layered with a rich, vanilla-infused custard cream, and topped with a light whipped frosting and a touch of toasted coconut or pecans for added texture and flavor",
+  "imageUrl": "/uploads/menus/desserts/85a6fb57-7cf6-4fd2-85ef-4ddd72f0be4e.jpg",
+  "category": "dessert",
+  "price": 8,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d9ac020be4deb9d09e35"
+  },
+  "name": "Doughnuts",
+  "description": "Freshly fried and delightfully fluffy, these classic doughnuts are coated in sugar or glaze and offered in a variety of flavors including chocolate, cinnamon, and jelly-filled. Perfect for a sweet snack any time of day",
+  "imageUrl": "/uploads/menus/desserts/d8b6f198-b44d-4c43-8982-dc80159468c8.jpg",
+  "category": "dessert",
+  "price": 3,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d9c1020be4deb9d09e38"
+  },
+  "name": "Éclairs",
+  "description": "Light and airy choux pastry filled with rich vanilla pastry cream and topped with a smooth, glossy chocolate glaze. A refined French classic perfect for any dessert lover",
+  "imageUrl": "/uploads/menus/desserts/65eff468-6ba1-459f-87e2-08fb48ee9843.jpg",
+  "category": "dessert",
+  "price": 5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d9d5020be4deb9d09e3b"
+  },
+  "name": "Fruit Salad",
+  "description": "A refreshing medley of seasonal fresh fruits such as melon, berries, grapes, pineapple, and citrus, lightly tossed with a hint of mint and citrus juice for a bright, healthy finish",
+  "imageUrl": "/uploads/menus/desserts/8c8ccdc6-4ecc-4570-9deb-fcdb5ddd76ab.jpg",
+  "category": "dessert",
+  "price": 6,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d9e5020be4deb9d09e3e"
+  },
+  "name": "Gelato",
+  "description": "An Italian-style frozen dessert known for its dense, silky texture and intense flavor. Available in a variety of classic and seasonal options such as pistachio, stracciatella, hazelnut, and fresh fruit sorbets",
+  "imageUrl": "/uploads/menus/desserts/5b0d60f9-ef5b-4632-af97-f56d8dede935.jpg",
+  "category": "dessert",
+  "price": 5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820d9f8020be4deb9d09e41"
+  },
+  "name": "Honeycomb",
+  "description": "A sweet and crunchy treat made from caramelized sugar and honey, creating a delicate, airy texture with a rich, natural honey flavor. Perfect on its own or as a topping for ice cream or desserts",
+  "imageUrl": "/uploads/menus/desserts/01eded4e-ce7c-48ed-86e3-01eb0fb594eb.jpg",
+  "category": "dessert",
+  "price": 6,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820da15020be4deb9d09e44"
+  },
+  "name": "Jelly Roll",
+  "description": "A light, fluffy sponge cake rolled with a layer of sweet fruit jam, usually raspberry or strawberry, and dusted with powdered sugar for a delightful balance of softness and sweetness",
+  "imageUrl": "/uploads/menus/desserts/8d7c609f-bb9e-46dc-953a-f5bdb6f49e19.jpg",
+  "category": "dessert",
+  "price": 6.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820da25020be4deb9d09e47"
+  },
+  "name": "Key Lime Pie",
+  "description": "A tangy and creamy dessert made with fresh key lime juice, a buttery graham cracker crust, and topped with a dollop of whipped cream, offering a perfect balance of tartness and sweetness",
+  "imageUrl": "/uploads/menus/desserts/aeb2cf33-7b64-42bf-86cb-fd471a0d1def.jpg",
+  "category": "dessert",
+  "price": 7.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820da41020be4deb9d09e4a"
+  },
+  "name": "Lemon Bars",
+  "description": "Delicately sweet and tangy, these lemon bars feature a buttery shortbread crust topped with a smooth, zesty lemon filling, finished with a dusting of powdered sugar for the perfect balance of flavors",
+  "imageUrl": "/uploads/menus/desserts/6855fdaf-45da-493b-a3c5-e7ec05dc773e.jpg",
+  "category": "dessert",
+  "price": 5.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820da51020be4deb9d09e4d"
+  },
+  "name": "Lemon Meringue Pie",
+  "description": "A classic dessert featuring a tangy lemon filling encased in a flaky pie crust, topped with a fluffy, golden-brown meringue. The perfect balance of sweet, tart, and creamy in every bite",
+  "imageUrl": "/uploads/menus/desserts/777bf71a-6c14-4f44-b03d-ed24ca776312.jpg",
+  "category": "dessert",
+  "price": 8,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820da64020be4deb9d09e50"
+  },
+  "name": "Macarons",
+  "description": "Delicate French cookies made with almond flour, filled with a variety of flavored buttercreams, ganaches, or jams. Available in an assortment of flavors, including vanilla, pistachio, raspberry, chocolate, and salted caramel",
+  "imageUrl": "/uploads/menus/desserts/e0926706-28fa-4558-89a0-600a9d25474f.jpg",
+  "category": "dessert",
+  "price": 2.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820da8a020be4deb9d09e53"
+  },
+  "name": "Napoleons",
+  "description": "A decadent French pastry consisting of layers of flaky puff pastry filled with rich vanilla custard, topped with a glaze of icing and sometimes a drizzle of chocolate for an elegant and indulgent treat",
+  "imageUrl": "/uploads/menus/desserts/0f5b1b46-d90a-41d3-b039-883c35ca3b8b.jpg",
+  "category": "dessert",
+  "price": 6.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820dac8020be4deb9d09e56"
+  },
+  "name": "Oatmeal Cookies",
+  "description": "Chewy and hearty cookies made with wholesome oats, brown sugar, and a hint of cinnamon, often studded with raisins or chocolate chips for added texture and sweetness",
+  "imageUrl": "/uploads/menus/desserts/158681dc-30d2-4784-bf66-de710dc553cb.jpg",
+  "category": "dessert",
+  "price": 3,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820daf4020be4deb9d09e59"
+  },
+  "name": "Panna Cotta",
+  "description": "A smooth and creamy Italian dessert made with vanilla-flavored cream, set to perfection and topped with a luscious berry compote or fresh fruit for a delicate and refreshing finish",
+  "imageUrl": "/uploads/menus/desserts/bd5573a6-aa74-4228-af38-83e88b7b68eb.jpg",
+  "category": "dessert",
+  "price": 7,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820db1f020be4deb9d09e5c"
+  },
+  "name": "Queen of Puddings",
+  "description": "A classic British dessert made with a layer of custard, topped with a fluffy meringue and a layer of raspberry or strawberry jam. Baked to golden perfection for a comforting and indulgent treat",
+  "imageUrl": "/uploads/menus/desserts/de8e0c21-5c3d-49ff-9b8b-68254cd812ac.jpg",
+  "category": "dessert",
+  "price": 6.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820db32020be4deb9d09e5f"
+  },
+  "name": "Red Velvet Cake",
+  "description": "A moist, velvety cake with a hint of cocoa and vibrant red color, layered with smooth cream cheese frosting and topped with a sprinkle of cake crumbs for extra texture and flavor",
+  "imageUrl": "/uploads/menus/desserts/d01dd474-cd25-4228-acea-e4bf88bdaf06.jpg",
+  "category": "dessert",
+  "price": 8,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820db47020be4deb9d09e62"
+  },
+  "name": "Sorbet",
+  "description": "A refreshing, dairy-free frozen dessert made from pureed fruit, sugar, and a touch of citrus for a bright, clean flavor. Available in a variety of seasonal fruit flavors such as lemon, raspberry, mango, and blood orange",
+  "imageUrl": "/uploads/menus/desserts/c279d12a-5404-4530-8df9-b492f775818d.jpg",
+  "category": "dessert",
+  "price": 5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820dbbd020be4deb9d09e65"
+  },
+  "name": "Southern Pecan Pie",
+  "description": "A rich and decadent dessert with a buttery, flaky crust, filled with a sweet, golden syrup filling and loaded with crunchy, toasted pecans. The flavor is a delightful balance of sweetness and nuttiness, with hints of vanilla and brown sugar. This Southern classic is perfect for any occasion",
+  "imageUrl": "/uploads/menus/desserts/5a984881-3b59-4e72-9f90-d41ab9693c80.jpg",
+  "category": "dessert",
+  "price": 5.99,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820dbde020be4deb9d09e68"
+  },
+  "name": "Texas Apple Cobbler",
+  "description": "A warm, comforting dessert that combines tender, spiced apples with a buttery, biscuit-like topping. The apples are perfectly sweetened with cinnamon, nutmeg, and brown sugar, creating a rich, flavorful base, while the golden, slightly crispy topping adds a delightful texture. It's best served with a scoop of vanilla ice cream or a drizzle of caramel sauce for an extra indulgence",
+  "imageUrl": "/uploads/menus/desserts/5e013cca-4aeb-4533-a0cf-f8c08b9eb9a4.jpg",
+  "category": "dessert",
+  "price": 4.99,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820dbf9020be4deb9d09e6b"
+  },
+  "name": "Tiramisu",
+  "description": "A classic Italian dessert that features layers of delicate, espresso-soaked ladyfingers, nestled between creamy mascarpone cheese and a light dusting of cocoa powder. The balance of rich coffee flavor and sweet, creamy layers creates a perfectly indulgent treat. It's a sophisticated dessert that offers a hint of coffee bitterness with every bite, complemented by the smoothness of the mascarpone",
+  "imageUrl": "/uploads/menus/desserts/3b4b745b-94d7-4546-80b7-5453193d546c.jpg",
+  "category": "dessert",
+  "price": 6.99,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820dc26020be4deb9d09e6e"
+  },
+  "name": "Upside Down Cake",
+  "description": "A moist, buttery cake topped with caramelized fruit, typically pineapples or berries, for a sweet, golden finish",
+  "imageUrl": "/uploads/menus/desserts/d201079c-2554-49ef-865d-9b0fc8b1ff0f.jpg",
+  "category": "dessert",
+  "price": 6.49,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820dc3a020be4deb9d09e71"
+  },
+  "name": "Vanilla Pudding",
+  "description": "A creamy, smooth dessert made with rich vanilla flavor, perfect for a comforting treat",
+  "imageUrl": "/uploads/menus/desserts/bef108e7-ccf1-4d91-9d52-7cfa60669103.jpg",
+  "category": "dessert",
+  "price": 4.45,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820dc4f020be4deb9d09e74"
+  },
+  "name": "Waffle",
+  "description": "A crispy, golden-brown waffle with a light, fluffy interior, perfect for topping with syrup, fresh fruit, or whipped cream",
+  "imageUrl": "/uploads/menus/desserts/8a83aa78-5602-48e8-ab64-5076a8c20f5b.jpg",
+  "category": "dessert",
+  "price": 5.99,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820dc61020be4deb9d09e77"
+  },
+  "name": "Xocolatl",
+  "description": "An ancient Mexican chocolate drink made with rich dark chocolate, spices like chili and cinnamon, and a hint of vanilla. This warm, indulgent beverage offers a bold, complex flavor with a subtle kick of heat",
+  "imageUrl": "/uploads/menus/desserts/3d57476c-d613-48c3-bec6-6187fe8d57be.jpg",
+  "category": "dessert",
+  "price": 6.12,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820dc78020be4deb9d09e7a"
+  },
+  "name": "Yule Log",
+  "description": "A festive, rolled sponge cake filled with rich chocolate ganache and decorated to resemble a traditional log, often adorned with powdered sugar and seasonal accents like holly or berries",
+  "imageUrl": "/uploads/menus/desserts/a21a3b04-802a-4c61-8b7f-d54cc609e507.jpg",
+  "category": "dessert",
+  "price": 7.99,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6820dc95020be4deb9d09e7d"
+  },
+  "name": "Zeppole",
+  "description": "Soft, fried Italian pastries dusted with powdered sugar and often filled with sweet ricotta or custard. Crispy on the outside and tender on the inside, these bite-sized treats are perfect for indulging",
+  "imageUrl": "/uploads/menus/desserts/112ad2b8-def7-4ef8-a0f5-40173613f6bf.jpg",
+  "category": "dessert",
+  "price": 5.29,
+  "__v": 0
+}]
